@@ -139,6 +139,7 @@ body {
 }
 
 .content {
+    z-index: 100;
     width: 215px;
     font-size: 36px;
     line-height: 40px;
@@ -155,21 +156,21 @@ body {
 .content:before {
     content: '[';
     position: absolute;
-    left: 0px;
+    left: -5px;
     line-height: 40px;
 }
 
 .content:after {
     content: ']';
     position: absolute;
-    right: 0px;
+    right: -10px;
     line-height: 40px;
 }
 
 .content:after,
 .content:before {
-    color: #16a085;
-    font-size: 42px;
+    color: #4fe7c9;
+    font-size: 80px;
     animation: 4s linear 0s normal none infinite opacity;
     -webkit-animation: 4s ease-out 0s normal none infinite opacity;
     -moz-animation: 4s ease-out 0s normal none infinite opacity;

@@ -29,6 +29,7 @@
 <body ng-app="ngFilter" ng-controller="MainController as main">
 
     <!--   This is the page loading icon   -->
+    <!--
 
     <table id="doc-loader">
         <tr>
@@ -37,6 +38,7 @@
             </td>
         </tr>
     </table>
+-->
 
 
 
@@ -63,17 +65,17 @@
                 <ul class="nav navbar-nav navbar-right navi-color">
                     <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
                     <li>
-                        <a href="#">Websites</span></a>
+                        <a href="#"><i class="fa fa-drupal"></i> Websites </span></a>
                     </li>
 
                     <li>
-                        <a href="#"> Games </a>
+                        <a href="#"><i class="fa fa-gamepad"></i> Games </a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicons glyphicons-gamepad">2D & 3D Art Works</span></a>
+                        <a href="#"><i class="fa fa-dot-circle-o"></i> 2D & 3D Art Works </span></a>
                     </li>
                     <li>
-                        <a href="#">Machine Learning</span></a>
+                        <a href="#">⊷ Machine Learning </span></a>
                     </li>
 
                     <li class="dropdown">
@@ -107,16 +109,18 @@
 
 
 
-    <!--    <canvas id="animation"></canvas>-->
+    <!--        <canvas id="animation"></canvas>-->
 
-    <div id="game-background">
 
-    </div>
-
+    <!-- This is the Header Text-->
     <div class='content'>
         <div class='visible'>
             <p>My Games</p>
         </div>
+    </div>
+
+   <!-- This is the background image behind the header text-->
+    <div id="games-background">
     </div>
 
 
@@ -135,9 +139,9 @@
                             <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
                             <span class="badge">{{show.year}}</span>
 
-                            <button ng-if="show.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{show.view_project_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
+                            <button ng-if="show.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{show.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
 
-                            <button ng-if="show.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{show.github_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View Project</span></a></button>
+                            <button ng-if="show.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{show.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
 
                         </li>
 
@@ -163,17 +167,9 @@
                     </ul>
                 </article>
 
-
-
-
-
-
-
-
-
-
             </section>
         </div>
+
 
 
 

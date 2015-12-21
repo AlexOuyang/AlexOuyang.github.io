@@ -3,7 +3,28 @@
 @import url('http://weloveiconfonts.com/api/?family=entypo');
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 
-/*=========  User Profile ===========*/
+/*=========  Games Page Headers Including Background Image ===========*/
+
+#games-background {
+    background: url("../img/Games/powerfulPoptart/powerfulPoptartDarker.png") repeat top center fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    background-color: #1f2532;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+
+/*=========  Main Page Headers Including Background Image and Social Icons ===========*/
 
 
 /* Getting rid of social icon link underline*/
@@ -29,8 +50,8 @@ a:active {
 
 header {
     text-align: center;
-    /*        background: rgba(0,0,0,0.8) url("../images/game.gif") repeat center center fixed;*/
-    /*        background-size: 80px 60px;*/
+    background: rgba(0, 0, 0, 0.8) url("../img/game.gif") no-repeat center center fixed;
+    background-size: 100% auto;
     background-color: #1f2532;
     color: white;
     position: fixed;
@@ -44,7 +65,7 @@ header {
 
 
 /* wraps around projects and footer for parallaxing in user profile page */
-
+/* Projects Wrapper for Games Page*/
 .content-wrapper-projects-page {
     background: #e9e9e9;
     top: 50%;
@@ -52,12 +73,16 @@ header {
     position: absolute;
     z-index: 2;
     width: 100%;
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    /* margin-left: 4%; */
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     transition: all 0.1s ease-in-out;
 }
 
+
+/* Projects Wrapper for Main Page*/
 .content-wrapper-main-page {
     background: #e9e9e9;
     top: 100%;
@@ -71,12 +96,14 @@ header {
     transition: all 0.1s ease-in-out;
 }
 
+
 /* Here ends the Parallaxing */
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
 
 /*
 header #profile-image {
@@ -166,7 +193,8 @@ header .intro-text .skills {
 /**
  * Profile image component
  */
-.profile-header-container{
+
+.profile-header-container {
     margin: 0 auto;
     text-align: center;
 }

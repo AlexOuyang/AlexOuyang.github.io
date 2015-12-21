@@ -20,17 +20,30 @@
 
 /*Override default navigation bar attributes*/
 
+/*
 .navbar-inverse {
     background-color: #1f2532;
     border-color: #1f2532;
     border-bottom: #1f2532 0px solid;
-    /*    max-height: 50px;*/
 }
-
 .navbar-inverse:hover {
     background-color: #1f2532;
     border-color: #1f2532;
     border-bottom: #1f2532 0px solid;
+}
+*/
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+    border-bottom: rgba(0, 0, 0, 0.5) 0px solid;
+    /*    max-height: 50px;*/
+}
+
+.navbar-inverse:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+    border-bottom: rgba(0, 0, 0, 0.5) 0px solid;
     /*    max-height: 50px;*/
 }
 
@@ -46,7 +59,7 @@
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-    background-color: #fb3468;
+    background-color: #1cceaa;
 }
 
 .navbar-collapse {
@@ -79,22 +92,22 @@
 
 .nav li:hover:nth-child(8n+1),
 .nav li.active:nth-child(8n+1) {
-    border-top: #fb3468 3px solid;
+    border-top: #1cceaa 3px solid;
 }
 
 .nav li:hover:nth-child(8n+2),
 .nav li.active:nth-child(8n+2) {
-    border-top: #fb3468 3px solid;
+    border-top: #1cceaa 3px solid;
 }
 
 .nav li:hover:nth-child(8n+3),
 .nav li.active:nth-child(8n+3) {
-    border-top: #fb3468 3px solid;
+    border-top: #1cceaa 3px solid;
 }
 
 .nav li:hover:nth-child(8n+4),
 .nav li.active:nth-child(8n+4) {
-    border-top: #fb3468 3px solid;
+    border-top: #1cceaa 3px solid;
 }
 
 
@@ -128,7 +141,7 @@
     bottom: 0;
     right: 6%;
     z-index: 100;
-    background: #fb3468;
+    background: #1cceaa;
     font-size: 24px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
