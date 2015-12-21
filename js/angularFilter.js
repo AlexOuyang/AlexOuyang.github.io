@@ -9,7 +9,9 @@ angular.module('ngFilter', []);
 angular.module('ngFilter').controller("MainController", function ($scope) {
     var vm = this;
     vm.searchInput = '';
-    vm.shows = [
+
+    // These are my games
+    vm.games = [
         {
             title: 'Powerful Poptart (In Progress)',
             tags: 'Game, PC, Mobile, Unity3D',
@@ -146,5 +148,72 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "",
             haveGithub: false,
             github_url: "",
+    }];
+
+
+
+
+
+    // These are the 2d and 3d art projects
+
+    vm.artWorks = [
+        {
+            title: 'Pixel Me Ideling 2',
+            tags: 'GameArt, PixelArt',
+            description: "",
+            img_url: "img/Art/meIdling2.gif",
+            year: 2015,
+
+        }, {
+            title: 'Pixel Me Jumping',
+            tags: 'GameArt, PixelArt',
+            description: "",
+            img_url: "img/Art/meJumping.gif",
+            year: 2015,
+
+    }, {
+            title: 'Piel Me',
+            tags: 'GameArt, PixelArt',
+            description: "",
+            img_url: "img/Art/me.png",
+            year: 2015,
+    }, {
+            title: 'Short Gupy',
+            tags: 'GameArt, PixelArt',
+            description: "",
+            img_url: "img/Art/shortGuy.gif",
+            year: 2015,
+    }, {
+            title: '❣ Meca Model - Gabrille',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            img_url: "img/Art/meca01.png",
+            year: 2014,
+    }, {
+            title: '❣ Meca Model - Hellsing',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender inspired by Evangelion',
+            img_url: "img/Art/meca02.png",
+            year: 2014,
+    }, {
+            title: '❣ Meca Model - HellRaiser',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            img_url: "img/Art/meca03.png",
+            url: "",
+            year: 2013,
+    }, {
+            title: '❣ Meca Model - Blue Elf',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            img_url: "img/Art/meca04.png",
+            year: 2013,
+            haveExternalLink: false
+    }, {
+            title: '❣ Meca Model - Pantacle',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            img_url: "img/Art/meca05.png",
+            year: 2013,
     }];
 });

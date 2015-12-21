@@ -23,6 +23,25 @@
 }
 
 
+/*=========  Artworks Page Headers Including Background Image ===========*/
+
+#art-background {
+    background: url("../img/Art/artCoverPhoto.png") repeat top center fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    background-color: #1f2532;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
 
 /*=========  Main Page Headers Including Background Image and Social Icons ===========*/
 
@@ -68,7 +87,7 @@ header {
 /* Projects Wrapper for Games Page*/
 .content-wrapper-projects-page {
     background: #e9e9e9;
-    top: 50%;
+    top: 55%;
     min-height: 10%;
     position: absolute;
     z-index: 2;

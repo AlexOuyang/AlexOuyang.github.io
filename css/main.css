@@ -181,9 +181,16 @@ body {
 .content p {
     display: inline;
     float: left;
+/*    margin-left: 20px;*/
+}
+
+.content #games{
     margin-left: 20px;
 }
 
+.content #artworks{
+    margin-left: 12px;
+}
 .content ul {
     margin-top: 0;
     padding-left: 110px;

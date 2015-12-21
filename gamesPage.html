@@ -63,7 +63,7 @@
 
                 <!--  User Profile Drop Down Menu and right navi buttons-->
                 <ul class="nav navbar-nav navbar-right navi-color">
-                    <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
+
                     <li>
                         <a href="#"><i class="fa fa-drupal"></i> Websites </span></a>
                     </li>
@@ -114,7 +114,7 @@
 
     <!-- This is the Header Text-->
     <div class='content'>
-        <div class='visible'>
+        <div id="games" class='visible'>
             <p>My Games</p>
         </div>
     </div>
@@ -132,37 +132,37 @@
         <div id="project-container" class="">
             <section id="pinBoot">
 
-                <article class="project" ng-repeat="show in main.shows | filter:main.searchInput">
+                <article class="project" ng-repeat="game in main.games | filter:main.searchInput">
                     <ul class="list-group">
                         <li class="list-group-item shadow">
 
                             <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
-                            <span class="badge">{{show.year}}</span>
+                            <span class="badge">{{game.year}}</span>
 
-                            <button ng-if="show.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{show.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
+                            <button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{game.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
 
-                            <button ng-if="show.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{show.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
+                            <button ng-if="game.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{game.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
 
                         </li>
 
-                        <a> <img class="media-object img-responsive" ng-src="{{show.img_url}}" /> </a>
+                        <a> <img class="media-object img-responsive" ng-src="{{game.img_url}}" /> </a>
 
                         <li class="list-group-item background-color1 project-description">
                             <p>Description:</p>
-                            <p>{{show.description}}</p>
+                            <p>{{game.description}}</p>
 
-                            <div ng-if="show.haveGallery == true" ng-repeat="galleryPic in show.gallery" class="table table-striped">
+                            <div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped">
                                 <div><img class="media-object img-responsive" ng-src="{{galleryPic.url}}" /></div>
                             </div>
 
                         </li>
 
                         <li class="list-group-item">
-                            <h4 class="media-heading move-text-center">{{show.title}}</h4>
+                            <h4 class="media-heading move-text-center">{{game.title}}</h4>
                         </li>
 
                         <li class="list-group-item list-group-item-picture">
-                            <span class="label label-info">Tags: {{show.tags}}</span>
+                            <span class="label label-info">Tags: {{game.tags}}</span>
                         </li>
                     </ul>
                 </article>
