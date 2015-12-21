@@ -29,7 +29,7 @@
 <body ng-app="ngFilter" ng-controller="MainController as main">
 
     <!--   This is the page loading icon   -->
-
+    <!--
     <table id="doc-loader">
         <tr>
             <td>
@@ -37,7 +37,7 @@
             </td>
         </tr>
     </table>
-
+-->
 
 
     <!-- This is the navigation bar -->
@@ -58,12 +58,26 @@
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- left navi buttons-->
+
+                </ul>
+
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="btn btn-search"><span class="glyphicon glyphicon-search">
+                        </span>
+                        <div class="form-group">
+                            <input type="text" class="form-control" style="width:700px" placeholder="Search: html5, css,...">
+                        </div>
+                    </div>
+
+                </form>
 
                 <!--  User Profile Drop Down Menu and right navi buttons-->
                 <ul class="nav navbar-nav navbar-right navi-color">
                     <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
                     <li>
-                        <a href="#">Websites</span></a>
+                        <a href="#">Projects</span></a>
                     </li>
 
                     <li>
@@ -71,9 +85,6 @@
                     </li>
                     <li>
                         <a href="#"><span class="glyphicons glyphicons-gamepad">2D & 3D Art Works</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Machine Learning</span></a>
                     </li>
 
                     <li class="dropdown">
@@ -107,11 +118,8 @@
 
 
 
-    <!--    <canvas id="animation"></canvas>-->
+    <canvas id="animation"></canvas>
 
-    <div id="game-background">
-
-    </div>
 
     <div class='content'>
         <div class='visible'>
@@ -122,7 +130,7 @@
 
 
     <!--  Paralaxing for Projects & footer in user profile page -->
-    <div class="content-wrapper-projects-page">
+    <div class="content-wrapper">
 
         <!-- These are the projects -->
         <div id="project-container" class="">
@@ -135,9 +143,9 @@
                             <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
                             <span class="badge">{{show.year}}</span>
 
-                            <button ng-if="show.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{show.view_project_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
+                            <button ng-if="show.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{show.view_project_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
 
-                            <button ng-if="show.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{show.github_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View Project</span></a></button>
+                            <button ng-if="show.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{show.github_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View Project</span></a></button>
 
                         </li>
 

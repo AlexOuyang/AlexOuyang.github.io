@@ -131,6 +131,13 @@ body {
     background-color: #1f2532;
 }
 
+.visible {
+    float: left;
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+}
+
 .content {
     width: 215px;
     font-size: 36px;
@@ -139,7 +146,7 @@ body {
     color: #ecf0f1;
     height: 40px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-top: -100px;
     margin-left: -118px;
@@ -148,14 +155,14 @@ body {
 .content:before {
     content: '[';
     position: absolute;
-    left: -30px;
+    left: 0px;
     line-height: 40px;
 }
 
 .content:after {
     content: ']';
     position: absolute;
-    right: -30px;
+    right: 0px;
     line-height: 40px;
 }
 
@@ -169,17 +176,11 @@ body {
     -o-animation: 4s ease-out 0s normal none infinite opacity;
 }
 
-.visible {
-    float: left;
-    font-weight: 600;
-    overflow: hidden;
-    height: 40px;
-}
 
 .content p {
     display: inline;
     float: left;
-    margin: 0;
+    margin-left: 20px;
 }
 
 .content ul {
