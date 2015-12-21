@@ -26,7 +26,8 @@
 /*=========  Artworks Page Headers Including Background Image ===========*/
 
 #art-background {
-    background: url("../img/Art/artCoverPhoto.png") repeat top center fixed;
+    background: url("../img/Art/artCoverPhotoDark.png")
+        repeat top center fixed;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     background-size: 100% auto;
@@ -93,7 +94,7 @@ header {
     z-index: 2;
     width: 100%;
     /* margin-left: 4%; */
-    border-radius: 20px;
+    border-radius: 10px;
     -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);

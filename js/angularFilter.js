@@ -122,7 +122,13 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'An infinite runner game that details the story of a lone wolf running wild in the forst. Unfortunately this game was abundonded half way.',
             img_url: "img/Games/forestRunner/1.png",
-            haveGallery: false,
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Games/forestRunner/2.jpg",
+                }, {
+                    url: "img/Games/forestRunner/3.jpg",
+                }],
             year: 2014,
             haveProject: false,
             view_project_url: "",
@@ -142,6 +148,14 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Games/mazeRunner/3.jpg",
                 }, {
                     url: "img/Games/mazeRunner/4.jpg",
+                }, {
+                    url: "img/Games/mazeRunner/5.PNG",
+                }, {
+                    url: "img/Games/mazeRunner/6.PNG",
+                }, {
+                    url: "img/Games/mazeRunner/7.PNG",
+                }, {
+                    url: "img/Games/mazeRunner/8.PNG",
                 }],
             year: 2013,
             haveProject: false,
@@ -160,60 +174,207 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         {
             title: 'Pixel Me Ideling 2',
             tags: 'GameArt, PixelArt',
-            description: "",
-            img_url: "img/Art/meIdling2.gif",
+            description: "The pixel me",
+            img_url: "img/Art/pixelMe/meIdling2.gif",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/pixelMe/me2.png",
+                }],
             year: 2015,
 
         }, {
             title: 'Pixel Me Jumping',
             tags: 'GameArt, PixelArt',
-            description: "",
-            img_url: "img/Art/meJumping.gif",
+            description: "The pixel me",
+            img_url: "img/Art/pixelMe/meJumping.gif",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/pixelMe/me.png",
+                }, {
+                    url: "img/Art/pixelMe/me2.png",
+                }],
             year: 2015,
 
     }, {
-            title: 'Piel Me',
+            title: 'Short Guy',
             tags: 'GameArt, PixelArt',
-            description: "",
-            img_url: "img/Art/me.png",
+            description: "Some pixel art I created for a game",
+            img_url: "img/Art/shortGuy/shortGuy.gif",
             year: 2015,
     }, {
-            title: 'Short Gupy',
-            tags: 'GameArt, PixelArt',
-            description: "",
-            img_url: "img/Art/shortGuy.gif",
-            year: 2015,
+            title: 'Tron Model - steelBlue',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            img_url: "img/Art/tronBlue/1.jpg",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/tronBlue/2.jpg",
+                }, {
+                    url: "img/Art/tronBlue/3.jpg",
+                }, {
+                    url: "img/Art/tronBlue/4.jpg",
+                }],
+            year: 2014,
+    }, {
+            title: 'Tron Model - red',
+            tags: 'Art, 3D Modeling, Blender',
+            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            img_url: "img/Art/tronRed/1.jpg",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/tronRed/2.jpg",
+                }, {
+                    url: "img/Art/tronRed/3.jpg",
+                }],
+            year: 2014,
+
     }, {
             title: '❣ Meca Model - Gabrille',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
-            img_url: "img/Art/meca01.png",
+            img_url: "img/Art/angel/1.jpg",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/angel/2.jpg",
+                }, {
+                    url: "img/Art/angel/3.jpg",
+                }, {
+                    url: "img/Art/angel/4.jpg",
+                }, {
+                    url: "img/Art/angel/5.jpg",
+                }, {
+                    url: "img/Art/angel/6.jpg",
+                }],
             year: 2014,
+
     }, {
-            title: '❣ Meca Model - Hellsing',
+            title: '❣ Meca Model - 04',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender inspired by Evangelion',
-            img_url: "img/Art/meca02.png",
-            year: 2014,
+            img_url: "img/Art/04/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/04/2.jpg",
+                }, {
+                    url: "img/Art/04/3.jpg",
+                }, {
+                    url: "img/Art/04/4.jpg",
+                }, {
+                    url: "img/Art/04/5.jpg",
+                }],
+            year: 2013,
     }, {
-            title: '❣ Meca Model - HellRaiser',
+            title: '❣ Meca Model - death',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
-            img_url: "img/Art/meca03.png",
-            url: "",
+            img_url: "img/Art/death/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/death/2.jpg",
+                }, {
+                    url: "img/Art/death/3.jpg",
+                }, {
+                    url: "img/Art/death/4.jpg",
+                }, {
+                    url: "img/Art/death/5.jpg",
+                }, {
+                    url: "img/Art/death/6.jpg",
+                }],
             year: 2013,
     }, {
             title: '❣ Meca Model - Blue Elf',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
-            img_url: "img/Art/meca04.png",
+            img_url: "img/Art/blueElf/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/blueElf/2.jpg",
+                }, {
+                    url: "img/Art/blueElf/3.jpg",
+                }, {
+                    url: "img/Art/blueElf/4.jpg",
+                }, {
+                    url: "img/Art/blueElf/5.jpg",
+                }, {
+                    url: "img/Art/blueElf/6.jpg",
+                }],
             year: 2013,
-            haveExternalLink: false
     }, {
             title: '❣ Meca Model - Pantacle',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
-            img_url: "img/Art/meca05.png",
+            img_url: "img/Art/snake/1.jpg",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/snake/2.jpg",
+                }, {
+                    url: "img/Art/snake/3.jpg",
+                }, {
+                    url: "img/Art/snake/4.jpg",
+                }],
             year: 2013,
-    }];
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic9.jpg",
+            year: 2015,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic8.jpg",
+            year: 2015,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic7.jpg",
+            year: 2015,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic6.jpg",
+            year: 2014,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic5.jpg",
+            year: 2013,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic4.jpg",
+            year: 2012,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic3.jpg",
+            year: 2011,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic2.jpg",
+            year: 2011,
+        }, {
+            title: 'My Drawing',
+            tags: 'Drawing, Art',
+            description: "This is my art",
+            img_url: "img/Art/drawings/pic1.jpg",
+            year: 2011,
+        }];
 });
