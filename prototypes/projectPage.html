@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>This is the project description page</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+
+
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/profileHeader.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loadingAnimation.css">
+    <link rel="stylesheet" href="css/projectPage.css">
+
+
+    <!--   This is the page loading icon   -->
+    <table id="doc-loader">
+        <tr>
+            <td>
+                <img src="images/Preloader_3.gif" alt="loading..." />
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- This is the navigation bar -->
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo that takes the user to the main page-->
+                <a class="navbar-brand active" href="#">
+                    <!--                    <img alt="Brand" class="navi-logo" src="images/logo.png">-->
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- left navi buttons-->
+                </ul>
+
+                <!--  User Profile Drop Down Menu and right navi buttons-->
+                <ul class="nav navbar-nav navbar-right navi-color">
+
+                    <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
+                    <li>
+                        <a href="#"> Sign In <span class="glyphicon glyphicon-arrow-right"></span></a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-plus"></span> New Project</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>Alex</span>
+                            <div class="list-group-item-icon">
+                                <img class="media-object img-circle img-responsive" style="width: 40px; height: 40px;" src="images/me.png" />
+                            </div>
+                            <!--                        <span class="caret"></span>-->
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Settings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!--   Custom Button  -->
+    <div id="create-project" title="Main Page" class="button">
+        <h1>H</h1>
+        <!--        <span class="glyphicon glyphicon-plus"></span> New Project</a>-->
+    </div>
+
+
+    <div class="row text-center">
+        <div id="project-header">
+            <h1 id="project-title">Pixel Me</h1>
+            <div class="span6 offset3 like-button">
+                <button type="button" class="btn btn-default centered" title="like"><span class=" text-white glyphicon glyphicon-heart"></span></button>
+                <span class="badge">42</span>
+            </div>
+
+            <div id="code-repository" class="offset3 like-button">
+                <h2><span class="label label-default panel-title-label code-repository"><a href="#">Code Repository</a></span></h2>
+            </div>
+
+            <div>
+                <!-- Twitter -->
+                <a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank" class="btn btn-twitter"><span class="glyphicon glyphicon-plus">&nbsp;</span><i class="fa fa-twitter"></i> Twitter</a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="btn btn-facebook"><span class="glyphicon glyphicon-plus">&nbsp;</span><i class="fa fa-facebook"></i> Facebook</a>
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank" class="btn btn-googleplus"><span class="glyphicon glyphicon-plus">&nbsp;</span><i class="fa fa-google-plus"></i> Google+</a>
+                <!-- LinkedIn -->
+                <!--                <a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><span class="glyphicon glyphicon-plus">&nbsp;</span><i class="fa fa-linkedin"></i> LinkedIn</a>-->
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container background-panel">
+        <div class="row">
+
+
+            <div class="col-md-5 pull-left">
+
+                <!--   Picture   -->
+                <ul class="list-group">
+                    <!--                    <li class="list-group-item">-->
+                    <h1 class="media-heading move-text-center"><strong><span class="list-group-item label label-default panel-title-label">Picture</span></strong></h1>
+                    <!--                    </li>-->
+
+                    <li class="list-group-item">
+                        <a> <img class="media-object img-responsive" src="images/me.png" /> </a>
+                    </li>
+
+                    <!--    Collaborators  -->
+                    <li class="list-group-item center-text">
+                        <h2 class="panel-title-text"><span class="label label-default panel-title-label">Collaborators</span></h2>
+
+                        <div class="collaborator">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="profile-header-container">
+                                        <div class="profile-header-img">
+                                            <img class="img-circle" src="images/chenxing.png" />
+                                            <!-- badge -->
+                                            <div class="rank-label-container">
+                                                <span class="label label-default rank-label">Chenxing Ouyang</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="collaborator">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="profile-header-container">
+                                        <div class="profile-header-img">
+                                            <img class="img-circle" src="images/chenxing.png" />
+                                            <!-- badge -->
+                                            <div class="rank-label-container">
+                                                <span class="label label-default rank-label">Chenxing Ouyang</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+            <div class="col-md-7 pull-right">
+                <ul class="list-group">
+                    <!--     Video    -->
+                    <ul class="list-group">
+                        <!--                        <li class="list-group-item">-->
+                        <h1 class="media-heading move-text-center"><strong><span class="list-group-item label label-default panel-title-label">Video</span></strong></h1>
+                        <!--                        </li>-->
+                        <li class="list-group-item">
+
+                            <!--                                <iframe src="//www.youtube.com/watch?v=E5WNqvdIfJ8" width="100%" height="350px"></iframe>-->
+
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="//www.youtube.com/watch?v=E5WNqvdIfJ8"></iframe>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <!--   Descriptions -->
+                    <li class="list-group-item center-text">
+                        <h2 class="panel-title-text"><span class="label label-default panel-title-label">Description</span></h2>
+
+                        <p>This is a pixel avator I created for myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor libero, luctus eu luctus vel, sagittis in dui. Maecenas eleifend, felis ut molestie efficitur, felis orci mollis justo, eu tincidunt nisi quam laoreet lacus. Donec leo arcu, imperdiet ut nisi faucibus, auctor euismod sem. Vestibulum consectetur nisl nisl, gravida dignissim erat dapibus ac. Curabitur efficitur augue ligula, id varius urna fringilla id. Proin at ligula ac purus pulvinar convallis eget ac turpis.</p>
+                    </li>
+
+                    <!--   Technological difficulties  -->
+                    <li class="list-group-item center-text">
+                        <h2 class="panel-title-text"><span class="label label-default panel-title-label">Challenges & Difficulties</span></h2>
+                        <p>It was quite hard to animate the characters. Ut ut diam id quam tincidunt placerat. Nulla quis auctor tortor. Fusce pretium sodales dui, id elementum nisi rhoncus sit amet. Maecenas euismod mollis ipsum quis auctor. Vivamus suscipit, erat nec condimentum posuere, urna metus mattis est, in convallis nunc ipsum quis augue. Aliquam pellentesque lorem nec tempus finibus. Quisque vitae semper justo, et ullamcorper odio. Morbi dapibus sagittis orci eu facilisis. Sed elementum leo vel orci lobortis, vel sodales sem aliquam.</p>
+                    </li>
+
+
+                    <!--   Technology Used  -->
+                    <li class="list-group-item center-text">
+                        <h2 class="panel-title-text"><span class="label label-default panel-title-label">Technology Used</span></h2>
+                        <h3>
+                            <span class="label label-info">Piscal</span>
+                            <span class="label label-info">Pixel Art</span>
+                            <span class="label label-info">Game Development</span>
+                        </h3>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!--    This is the footer  -->
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">HackStatus © 2015
+                <a href="">HackStatus.io</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc1/js/bootstrap.min.js'></script>
+
+    <script src="js/navigation.js"></script>
+    <script src='js/project.js'></script>
+
+
+
+
+
+    </body>
+
+</html>

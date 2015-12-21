@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loadingAnimation.css">
+    <link rel="stylesheet" href="css/profileHeader.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <!--   This is the page loading icon   -->
+    <table id="doc-loader">
+        <tr>
+            <td>
+                <img src="images/Preloader_3.gif" alt="loading..." />
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- This is the navigation bar -->
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo that takes the user to the main page-->
+                <a class="navbar-brand active" href="#">
+                    <!--                    <img alt="Brand" class="navi-logo" src="images/logo.png">-->
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- left navi buttons-->
+                </ul>
+
+                <!--  User Profile Drop Down Menu and right navi buttons-->
+                <ul class="nav navbar-nav navbar-right navi-color">
+                    <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
+                    <li>
+                        <a href="#"> Sign In <span class="glyphicon glyphicon-arrow-right"></span></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-plus"></span> New Project</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>Alex</span>
+                            <div class="list-group-item-icon">
+                                <img class="media-object img-circle img-responsive" style="width: 40px; height: 40px;" src="images/me.png" />
+                            </div>
+                            <!--                        <span class="caret"></span>-->
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Settings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+    <!--   Custom Button  -->
+    <div id="create-project" class="button">
+        <h1>H</h1>
+        <!--        <span class="glyphicon glyphicon-plus"></span> New Project</a>-->
+    </div>
+
+
+
+
+
+
+    <!--  User Profile  -->
+
+    <header id="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                        <div id="profile-image" class="profile-header-container">
+                            <div class="profile-header-img">
+                                <img class="img-circle" src="images/me.png" />
+                                <!-- badge -->
+                                <div class="rank-label-container">
+<!--                                    <span class="label label-default rank-label name">Chenxing Ouyang</span>-->
+                                </div>
+                            </div>
+<!--                        <img id="profile-image" class="media-object img-circle img-responsive" src="images/me.png" alt="">-->
+                        <div class="intro-text">
+                            <span class="name">Chenxing Ouyang</span>
+                            <p class="skills">Chenxing Ouyang is passionate about game development</p>
+                            <p class="skills">Skills: Game Development, Design</p>
+                        </div>
+                        <!--                    <hr class="star-light">-->
+                        <div id="social-icons">
+                            <a href="https://www.facebook.com/chenxing.ouyang">
+                                <div class="social facebook">&#62220;</div>
+                            </a>
+                            <a href="https://www.facebook.com/chenxing.ouyang">
+                                <div class="social twitter">&#62217;</div>
+                            </a>
+                            <a href="https://www.facebook.com/chenxing.ouyang">
+                                <div class="social google-plus">&#62223;</div>
+                            </a>
+                            <a href="https://www.facebook.com/chenxing.ouyang">
+                                <div class="social linkedin">&#62232;</div>
+                            </a>
+                            <a href="https://www.facebook.com/chenxing.ouyang">
+                                <div class="social dribble">&#62235;</div>
+                            </a>
+                            <a href="https://www.facebook.com/chenxing.ouyang">
+                                <div class="social pinterest">&#62226;</div>
+                            </a>
+
+                            <!--                        <div class="social vimeo">&#62214;</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!--  Paralaxing for Projects & footer in user profile page -->
+    <div class="content-wrapper">
+
+        <!-- These are the projects -->
+        <div id="project-container" class="">
+            <section id="pinBoot">
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/10259775_698609010212096_8502709911620520433_n.jpg?oh=5b979447ab942d250979191a87c26fe7&oe=569DE8BF" /> </a>
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center">HTML5 2D Game Engine</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info">Tag1</span>
+                            <span class="label label-info">Tag2</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="images/me.png" /> </a>
+
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p> This is description</p>
+                        </li>
+
+                        <div>
+                            <li class="list-group-item">
+                                <h4 class="media-heading move-text-center">Pixel Art</h4>
+                            </li>
+
+                            <li class="list-group-item list-group-item-picture">
+                                <span class="label label-info">Tag1</span>
+                                <span class="label label-info">Tag2</span>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10325543_698609026878761_4451990224410962416_n.jpg?oh=223752fff2f824de2820004ee5c4a6d0&oe=569559CB" /> </a>
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center">HTML5 2D Game Engine</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info">Tag1</span>
+                            <span class="label label-info">Tag2</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="images/insatiableSpider2.png" /> </a>
+
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p> This is description</p>
+                        </li>
+
+                        <div>
+                            <li class="list-group-item">
+                                <h4 class="media-heading move-text-center">Pixel Art</h4>
+                            </li>
+
+                            <li class="list-group-item list-group-item-picture">
+                                <span class="label label-info">Tag1</span>
+                                <span class="label label-info">Tag2</span>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10378962_710954182310912_8117498263643990874_n.jpg?oh=8a7b637d14724531e122870f1c4c955f&oe=56AB0D71" /> </a>
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center">HTML5 2D Game Engine</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info">Tag1</span>
+                            <span class="label label-info">Tag2</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="images/reversal.gif" /> </a>
+
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p> This is description</p>
+                        </li>
+
+                        <div>
+                            <li class="list-group-item">
+                                <h4 class="media-heading move-text-center">Pixel Art</h4>
+                            </li>
+
+                            <li class="list-group-item list-group-item-picture">
+                                <span class="label label-info">Tag1</span>
+                                <span class="label label-info">Tag2</span>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="images/forestRunner.PNG" /> </a>
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center">HTML5 2D Game Engine</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info">Tag1</span>
+                            <span class="label label-info">Tag2</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <span class="badge">42</span>
+                            <button type="button" class="btn btn-default pull-right" title="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                        </li>
+
+                        <a> <img class="media-object img-responsive" src="images/me2.png" /> </a>
+
+
+                        <li class="list-group-item background-color1 project-description">
+                            <p> This is description</p>
+                        </li>
+
+                        <div>
+                            <li class="list-group-item">
+                                <h4 class="media-heading move-text-center">Pixel Art</h4>
+                            </li>
+
+                            <li class="list-group-item list-group-item-picture">
+                                <span class="label label-info">Tag1</span>
+                                <span class="label label-info">Tag2</span>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+
+            </section>
+        </div>
+
+
+
+        <!--    This is the footer  -->
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted">HackStatus © 2015
+                    <a href="">HackStatus.io</a>
+                </p>
+            </div>
+        </div>
+
+        <!--   Scroll to the top  -->
+        <ul class="nav pull-right scroll-top">
+            <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+        </ul>
+
+    </div>
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc1/js/bootstrap.min.js'></script>
+
+    <script src="js/navigation.js"></script>
+    <script src='js/project.js'></script>
+
+
+
+
+
+</body>
+
+</html>
