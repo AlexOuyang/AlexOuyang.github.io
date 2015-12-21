@@ -140,7 +140,7 @@
                     <ul class="list-group">
                         <li class="list-group-item shadow">
 
-                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-heart"></span></button>
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
                             <span class="badge">{{show.year}}</span>
 
                             <button ng-if="show.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{show.view_project_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
@@ -158,8 +158,6 @@
                             <div ng-if="show.haveGallery == true" ng-repeat="galleryPic in show.gallery" class="table table-striped">
                                 <div><img class="media-object img-responsive" ng-src="{{galleryPic.url}}" /></div>
                             </div>
-
-                            <a> <img class="media-object img-responsive" ng-src="{{show.img_url}}" /> </a>
 
                         </li>
 

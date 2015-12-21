@@ -9,46 +9,51 @@ angular.module('ngFilter', []);
 angular.module('ngFilter').controller("MainController", function ($scope) {
     var vm = this;
     vm.searchInput = '';
-    $scope.people = [
-        {
-            url: "img/Games/insatiableSpider/2.png",
-        },
-        {
-            url: "img/Games/insatiableSpider/2.png",
-        },
-        {
-            url: "img/Games/insatiableSpider/2.png",
-        },
-        {
-            url: "img/Games/insatiableSpider/2.png",
-        }];
     vm.shows = [
         {
-            title: '✓ Insatiable Spider (Available on Google Play)',
+            title: 'Reversal (Web Game Made For JS13K Hackathon)',
+            tags: 'Game, Web, HTML5, Javascript',
+            description: 'Traversal is a game that allows you to teleport while gaining higher jumping velocity, teleportation is an important part of the game. It is a 2D side scroller html5 game created from scratch using pure Javascript. I also implemented features including code generated environmental art, Newtonian physics, fluid simulations and tile map generation.',
+            img_url: "img/Games/reversal/reversal.gif",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Games/reversal/1.png",
+                }, {
+                    url: "img/Games/reversal/2.png",
+                }],
+            year: 2015,
+            haveProject: true,
+            view_project_url: "http://js13kgames.com/entries/reversal",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/REVERSAL-game",
+    }, {
+            title: 'Insatiable Spider (Available on Google Play)',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'You are one BIG-ASS SPIDER with an INSATIABLE hunger!! Eat as much and as fast as you can in this arcade shooter. Earn points by eating and watch as your power grows!',
             img_url: "img/Games/insatiableSpider/1.png",
             haveGallery: true,
             gallery: [
                 {
+                    url: "img/Games/insatiableSpider/0.png",
+                }, {
                     url: "img/Games/insatiableSpider/2.png",
-                },
-                {
-                    url: "img/Games/insatiableSpider/2.png",
-                },
-                {
-                    url: "img/Games/insatiableSpider/2.png",
-                },
-                {
-                    url: "img/Games/insatiableSpider/2.png",
+                }, {
+                    url: "img/Games/insatiableSpider/3.png",
+                }, {
+                    url: "img/Games/insatiableSpider/4.png",
+                }, {
+                    url: "img/Games/insatiableSpider/5.png",
+                }, {
+                    url: "img/Games/insatiableSpider/6.png",
                 }],
             year: 2015,
             haveProject: true,
             view_project_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
             haveGithub: true,
-            github_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
+            github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
     }, {
-            title: '★ Powerful Poptart (In Progress)',
+            title: 'Powerful Poptart (In Progress)',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'Genetically modified hamster Poptart tries to save his abducted human family.',
             img_url: "img/Projects/PowerfulPoptart.png",
@@ -56,7 +61,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             year: 2015,
             haveExternalLink: true
     }, {
-            title: '★ Into The Light (In Progress)',
+            title: 'Into The Light (In Progress)',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'The story of a soul in the world of darkness tries to illuminate the world by collecting star dusts',
             img_url: "img/Projects/IntoTheLight.png",

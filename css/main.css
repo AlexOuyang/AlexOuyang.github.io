@@ -17,6 +17,11 @@ div {
     font-family: 'Dorsa', sans-serif;
 }
 
+/* Override link color in bootstrap*/
+a {
+    color: black;
+    text-decoration: none;
+}
 
 /* Getting rid of social icon link underline*/
 

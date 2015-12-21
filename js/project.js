@@ -19,8 +19,20 @@ $(document).ready(function () {
     // Hide the description on start up
     $('.project-description').hide();
 
-    // Hover to toggle description
+    // Hover on top of project card to toggle description
     $('.project').hover(
+        function () {
+            if (!$('.project-description', this).is(':animated')) {
+                //prevents a queue of hover events
+                $('.project-description', this).slideDown("fast");
+            }
+        },
+        function () {
+            $('.project-description', this).slideUp("fast");
+        }
+    );
+    // Click on project card to toggle description
+    $('.project').click(
         function () {
             if (!$('.project-description', this).is(':animated')) {
                 //prevents a queue of hover events
