@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/loadingAnimation.css">
     <link rel="stylesheet" href="css/profileHeader.css">
+    <link rel="stylesheet" href="css/main.css">
 
 
 
@@ -58,28 +59,19 @@
 
                 <!--  User Profile Drop Down Menu and right navi buttons-->
                 <ul class="nav navbar-nav navbar-right navi-color">
-                    <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
                     <li>
-                        <a href="#"> Sign In <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        <a href="otherProjects.html"><i class="fa fa-drupal"></i> Web Projects & Software </span></a>
                     </li>
 
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-plus"></span> New Project</a>
+                        <a href="gamesPage.html"><i class="fa fa-gamepad"></i> My Games </a>
                     </li>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span>Alex</span>
-                            <div class="list-group-item-icon">
-                                <img class="media-object img-circle img-responsive" style="width: 40px; height: 40px;" src="images/me.png" />
-                            </div>
-                            <!--                        <span class="caret"></span>-->
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Settings</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Log Out</a></li>
-                        </ul>
+                    <li>
+                        <a href="artPage.html"><i class="fa fa-dot-circle-o"></i> 2D & 3D Art Works </span></a>
+                    </li>
+                    <li>
+                        <a href="#">⊷ Machine Learning </span></a>
                     </li>
                 </ul>
             </div>
@@ -92,15 +84,7 @@
 
 
 
-    <!--   Custom Button  -->
-    <div id="create-project" class="button">
-        <h1>H</h1>
-        <!--        <span class="glyphicon glyphicon-plus"></span> New Project</a>-->
-    </div>
-
-
-
-
+    <canvas id="animation"></canvas>
 
 
     <!--  User Profile  -->
@@ -110,15 +94,15 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                        <div id="profile-image" class="profile-header-container">
-                            <div class="profile-header-img">
-                                <img class="img-circle" src="images/me.png" />
-                                <!-- badge -->
-                                <div class="rank-label-container">
-<!--                                    <span class="label label-default rank-label name">Chenxing Ouyang</span>-->
-                                </div>
+                    <div id="profile-image" class="profile-header-container">
+                        <div class="profile-header-img">
+                            <img class="img-circle" src="images/me.png" />
+                            <!-- badge -->
+                            <div class="rank-label-container">
+                                <!--                                    <span class="label label-default rank-label name">Chenxing Ouyang</span>-->
                             </div>
-<!--                        <img id="profile-image" class="media-object img-circle img-responsive" src="images/me.png" alt="">-->
+                        </div>
+                        <!--                        <img id="profile-image" class="media-object img-circle img-responsive" src="images/me.png" alt="">-->
                         <div class="intro-text">
                             <span class="name">Chenxing Ouyang</span>
                             <p class="skills">Chenxing Ouyang is passionate about game development</p>

@@ -33,6 +33,7 @@
 }
 */
 
+/*======= color of navibar =====*/
 .navbar-inverse {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 0, 0, 0.5);
@@ -47,19 +48,31 @@
     /*    max-height: 50px;*/
 }
 
+.mainPage {
+    background-color: #172329;
+    border-color: #172329;
+    border-bottom: #172329 0px solid;
+    /*    max-height: 50px;*/
+}
+
+.mainPage:hover {
+    background-color: #172329;
+    border-color: #172329;
+    border-bottom: #172329 0px solid;
+    /*    max-height: 50px;*/
+}
+
 
 /* Mobile Navi Icon Change background color*/
-
 .navbar-inverse .navbar-toggle {
     border-color: transparent;
 }
 
 
 /* Mobile Navi Icon background color when hover*/
-
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-    background-color: #1cceaa;
+    background-color: #4ABC96;
 }
 
 .navbar-collapse {
@@ -92,22 +105,28 @@
 
 .nav li:hover:nth-child(8n+1),
 .nav li.active:nth-child(8n+1) {
-    border-top: #1cceaa 3px solid;
+    border-top: #4ABC96 3px solid;
+    color: #4ABC96;
 }
 
 .nav li:hover:nth-child(8n+2),
 .nav li.active:nth-child(8n+2) {
-    border-top: #1cceaa 3px solid;
+    border-top: #4ABC96 3px solid;
+    color: #4ABC96;
+
 }
 
 .nav li:hover:nth-child(8n+3),
 .nav li.active:nth-child(8n+3) {
-    border-top: #1cceaa 3px solid;
+    border-top: #4ABC96 3px solid;
+    color: #4ABC96;
 }
 
 .nav li:hover:nth-child(8n+4),
 .nav li.active:nth-child(8n+4) {
-    border-top: #1cceaa 3px solid;
+    border-top: #4ABC96 3px solid;
+    color: #4ABC96;
+
 }
 
 

@@ -13,33 +13,169 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my other projects
     vm.projects = [
         {
-            title: 'Powerful Poptart (In Progress)',
-            tags: 'Game, PC, Mobile, Unity3D',
-            description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vendictive hamster boss. Designed and implemented in game puzzle, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
-            img_url: "img/Games/powerfulPoptart/7.png",
+            title: '3D Grapher (In Progress)',
+            tags: 'Javascript, Front-end, Web',
+            description: 'Realtime web-based 3D function grapher made in javascript',
+            img_url: "img/Projects/3dGrapher/1.png",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Games/powerfulPoptart/1.png",
-                }, {
-                    url: "img/Games/powerfulPoptart/2.png",
-                }, {
-                    url: "img/Games/powerfulPoptart/3.png",
-                }, {
-                    url: "img/Games/powerfulPoptart/4.png",
-                }, {
-                    url: "img/Games/powerfulPoptart/5.png",
-                }, {
-                    url: "img/Games/powerfulPoptart/6.png",
+                    url: "img/Projects/3dGrapher/2.png",
                 }],
             year: 2015,
-            haveProject: true,
-            view_project_url: "http://nxtlvlgames.tumblr.com/",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/3DGrapher",
+        }, {
+            title: 'HackStatus (SD Hacks)',
+            tags: 'Hackathon, Front-end, Web',
+            description: 'HackStatus is a website that allows its users to share hackathon projects and collaborate. Created the entire front end graphical interface including project page, user profile page, main page, registration form, animations using jQuery, angularJS, HTML5 and CSS.',
+            img_url: "img/Projects/hackStatus/hackStatus.gif",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/hackStatus/1.png",
+                }, {
+                    url: "img/Projects/hackStatus/2.png",
+                }, {
+                    url: "img/Projects/hackStatus/3.png",
+                }, {
+                    url: "img/Projects/hackStatus/4.png",
+                }, {
+                    url: "img/Projects/hackStatus/5.png",
+                }, {
+                    url: "img/Projects/hackStatus/6.png",
+                }, {
+                    url: "img/Projects/hackStatus/7.png",
+                }, {
+                    url: "img/Projects/hackStatus/8.png",
+                }],
+            year: 2015,
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/HackStatus",
+        }, {
+            title: 'Personal Website V0.1',
+            tags: 'Front-end, Web',
+            description: 'My first personal website.',
+            img_url: "img/Projects/myWebsite1/myWebsite.gif",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/myWebsite1/1.png",
+                }, {
+                    url: "img/Projects/myWebsite1/2.png",
+                }, {
+                    url: "img/Projects/myWebsite1/3.png",
+                }, {
+                    url: "img/Projects/myWebsite1/4.png",
+                }],
+            year: 2014,
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/PersonalWebsite",
+        }, {
+            title: 'Quadcopter (In Progress)',
+            tags: 'Hardware, Arduino',
+            description: 'The purpose of this project is to create a systems and algorithms necessary to allow a quadcopter to autonomously locate and land on a station target using C and Arduino Uno micro-controller. (In progress)',
+            img_url: "img/Projects/quadcopter/quadcopter.jpg",
+            year: 2015,
+
+        }, {
+            title: 'MorningSignOut (Internship)',
+            tags: 'Hackathon, Front-end, Web',
+            description: 'Created an android app that allows MorningSignOut readers to access website articles via mobile devices. Designed test procedures, performed functional testings on code, documented source code and fixed bugs. Maintained the development and the structure of the MorningSignOut website.',
+            img_url: "img/Projects/mso/1.jpg",
+            year: 2015,
+            haveProject: false,
             haveGithub: false,
-            github_url: "",
+        }, {
+            title: 'Entangled',
+            tags: 'LeapMotion, Touch-control, Front-end, HTML5',
+            description: 'Gestured controlled minimalistic canvas animation implemented using LeapMotion motion controller and Javascript.',
+            img_url: "img/WebArt/entangled/Entangled.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/WebArt/entangled/1.png",
+                }, {
+                    url: "img/WebArt/entangled/2.png",
+                }, {
+                    url: "img/WebArt/entangled/3.png",
+                }, {
+                    url: "img/WebArt/entangled/4.png",
+                }],
+            year: 2014,
+            haveProject: true,
+            view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/CanvasAnimations/tree/master/LeapMotion%20Minimalist%20Pattern%20Trials",
+        }, {
+            title: 'Scattered',
+            tags: 'Touch-control, Front-end, HTML5',
+            description: 'Interactive touch screen minimalistic canvas animation implemented using pure Javascript.',
+            img_url: "img/WebArt/scattered/scattered.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/WebArt/scattered/1.png",
+                }, {
+                    url: "img/WebArt/scattered/2.png",
+                }, {
+                    url: "img/WebArt/scattered/3.png",
+                }, {
+                    url: "img/WebArt/scattered/4.png",
+                }],
+            year: 2014,
+            haveProject: true,
+            view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/CanvasAnimations/tree/master/LeapMotion%20Minimalist%20Pattern%20Trials",
+        }, {
+            title: 'Gesture Controlled 3D Cube Photo Gallery',
+            tags: 'Web, Sinatra, Experiment, Canvas',
+            description: 'A small photog gallery made using Ruby + Sinatra, where users can upload pictures to the six sides of a cube. To rotate the cube, simple wave your hand up down, left or right.',
+            img_url: "img/WebArt/cube/Cube.png",
+            year: 2013,
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/3D-Cube-Gallery",
+        }, {
+            title: '❦ Image Slider Of Love',
+            tags: 'Web, Front-end, HTML5',
+            description: 'Something Made for a friend with Love ❤❤❤',
+            img_url: "img/WebArt/sliderOfLove/ImageSliderOfLove.png",
+            year: 2012,
+            haveProject: true,
+            view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/CanvasAnimations/tree/master/LeapMotion%20Minimalist%20Pattern%20Trials",
+        }, {
+            title: 'Remaint Game Studio',
+            tags: 'Front-end, HTML5, Web Design',
+            description: 'A joke game studio I founded with a friend of mine in high school to make games for fun.',
+            img_url: "img/Projects/remaint/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/remaint/5.png",
+                }, {
+                    url: "img/Projects/remaint/2.png",
+                }, {
+                    url: "img/Projects/remaint/3.png",
+                }, {
+                    url: "img/Projects/remaint/4.png",
+                }],
+            year: 2012,
+
         }];
-    
-    
+
+
+
     // These are my game projects
     vm.games = [
         {
