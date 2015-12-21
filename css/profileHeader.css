@@ -22,6 +22,24 @@
     left: 0;
 }
 
+/*=========  Other Projects Page Headers Including Background Image ===========*/
+
+#projects-background {
+    background: url("../img/WebArt/webArtHeader.png") repeat top center fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    background-color: #1f2532;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
 
 /*=========  Artworks Page Headers Including Background Image ===========*/
 

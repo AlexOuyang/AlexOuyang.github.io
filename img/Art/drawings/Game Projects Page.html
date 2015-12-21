@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/gamesPage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="UTF-8">
+    <title>Game Projects Page</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./Game Projects Page_files/jquery-ui.css">
+    <link href="./Game Projects Page_files/css" rel="stylesheet" type="text/css">
+    <link href="./Game Projects Page_files/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Game Projects Page_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Game Projects Page_files/animate.css">
+
+
+    <link rel="stylesheet" href="./Game Projects Page_files/navigation.css">
+    <link rel="stylesheet" href="./Game Projects Page_files/projects.css">
+    <link rel="stylesheet" href="./Game Projects Page_files/footer.css">
+    <link rel="stylesheet" href="./Game Projects Page_files/loadingAnimation.css">
+    <link rel="stylesheet" href="./Game Projects Page_files/profileHeader.css">
+    <link rel="stylesheet" href="./Game Projects Page_files/main.css">
+
+
+
+
+</head>
+
+<body ng-app="ngFilter" ng-controller="MainController as main" class="ng-scope">
+
+    <!--   This is the page loading icon   -->
+    <table id="doc-loader" style="display: none;">
+        <tbody><tr>
+            <td>
+                <img src="./Game Projects Page_files/Preloader_2.gif" alt="loading...">
+            </td>
+        </tr>
+    </tbody></table>
+
+
+
+
+    <!-- This is the navigation bar -->
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo that takes the user to the main page-->
+                <a class="navbar-brand active" href="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/gamesPage.html#">
+                    <!--                    <img alt="Brand" class="navi-logo" src="img/logo.png">-->
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <!--  User Profile Drop Down Menu and right navi buttons-->
+                <ul class="nav navbar-nav navbar-right navi-color">
+
+                    <li>
+                        <a href="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/otherProjects.html"><i class="fa fa-drupal"></i> Web Projects &amp; Software </a>
+                    </li>
+
+                    <li>
+                        <a href="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/artPage.html"><i class="fa fa-dot-circle-o"></i> 2D &amp; 3D Art Works </a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/gamesPage.html#">⊷ Machine Learning </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/index.html">
+                            <span>Alex</span>
+                            <div class="list-group-item-icon">
+                                <img class="media-object img-circle img-responsive" style="width: 40px; height: 40px;" src="./Game Projects Page_files/me.png">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+
+    <!--
+    <div id="create-project" class="button">
+        <img class="media-object img-circle img-responsive" style="width: 80px; height: 70px;" src="img/me.png" />
+    </div>
+-->
+
+
+
+
+
+
+    <!--        <canvas id="animation"></canvas>-->
+
+
+    <!-- This is the Header Text-->
+    <div class="content">
+        <div id="games" class="visible">
+            <p>My Games</p>
+        </div>
+    </div>
+
+   <!-- This is the background image behind the header text-->
+    <div id="games-background">
+    </div>
+
+
+
+    <!--  Paralaxing for Projects & footer in user profile page -->
+    <div class="content-wrapper-projects-page">
+
+        <!-- These are the projects -->
+        <div id="project-container" class="">
+            <section id="pinBoot" style="height: 1067px;">
+
+                <!-- ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c0 r1" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 0px; top: 0px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2015</span>
+
+                            <!-- ngIf: game.haveProject == true --><button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right ng-scope"><a href="http://nxtlvlgames.tumblr.com/"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button><!-- end ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/7.png" src="./Game Projects Page_files/7.png"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vendictive hamster boss. Designed and implemented in game puzzle, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/1.png" src="./Game Projects Page_files/1.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/2.png" src="./Game Projects Page_files/2.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/3.png" src="./Game Projects Page_files/3.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/4.png" src="./Game Projects Page_files/4.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/5.png" src="./Game Projects Page_files/5.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/powerfulPoptart/6.png" src="./Game Projects Page_files/6.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Powerful Poptart (In Progress)</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Game, PC, Mobile, Unity3D</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c1 r1" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 384px; top: 0px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2015</span>
+
+                            <!-- ngIf: game.haveProject == true --><button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right ng-scope"><a href="http://js13kgames.com/entries/reversal"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button><!-- end ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true --><button ng-if="game.haveGithub == true" type="button" class="btn btn-default pull-right ng-scope"><a href="https://github.com/AlexOuyang/REVERSAL-game"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button><!-- end ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/reversal/reversal.gif" src="./Game Projects Page_files/reversal.gif"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">Traversal is a game that allows you to teleport while gaining higher jumping velocity, teleportation is an important part of the game. It is a 2D side scroller html5 game created from scratch using pure Javascript. I also implemented features including code generated environmental art, Newtonian physics, fluid simulations and tile map generation.</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/reversal/1.png" src="./Game Projects Page_files/1(1).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/reversal/2.png" src="./Game Projects Page_files/2(1).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Reversal (Web Game Made For JS13K Hackathon)</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Game, Web, HTML5, Javascript</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c2 r1" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 768px; top: 0px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2015</span>
+
+                            <!-- ngIf: game.haveProject == true --><button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right ng-scope"><a href="https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button><!-- end ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true --><button ng-if="game.haveGithub == true" type="button" class="btn btn-default pull-right ng-scope"><a href="https://github.com/AlexOuyang/Insatiable-Spider"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button><!-- end ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/1.png" src="./Game Projects Page_files/1(2).png"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">You are one BIG-ASS SPIDER with an INSATIABLE hunger!! Eat as much and as fast as you can in this arcade shooter. Earn points by eating and watch as your power grows!</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/0.png" src="./Game Projects Page_files/0.png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/2.png" src="./Game Projects Page_files/2(2).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/3.png" src="./Game Projects Page_files/3(1).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/4.png" src="./Game Projects Page_files/4(1).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/5.png" src="./Game Projects Page_files/5(1).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/insatiableSpider/6.png" src="./Game Projects Page_files/6(1).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Insatiable Spider (Available on Google Play)</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Game, PC, Mobile, Unity3D</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c0 r2" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 0px; top: 344px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2015</span>
+
+                            <!-- ngIf: game.haveProject == true --><button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right ng-scope"><a href="http://nxtlvl.itch.io/into-the-light"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button><!-- end ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/intoTheLight/0.png" src="./Game Projects Page_files/0(1).png"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">The story of a lost soul in the world of darkness tries to illuminate the world by collecting star dusts. I designed and implemented reverse gravity physics and teleportation mechanisms which allows players to teleport while retaining velocity.</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/intoTheLight/1.png" src="./Game Projects Page_files/1(3).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/intoTheLight/2.png" src="./Game Projects Page_files/2(3).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/intoTheLight/3.png" src="./Game Projects Page_files/3(2).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/intoTheLight/4.png" src="./Game Projects Page_files/4(2).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Into The Light</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Game, PC, Mobile, Unity3D</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c1 r2" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 384px; top: 388px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2014</span>
+
+                            <!-- ngIf: game.haveProject == true --><button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right ng-scope"><a href="https://www.youtube.com/watch?v=jFnByirxdkc"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button><!-- end ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/lostWorld/3.png" src="./Game Projects Page_files/3(3).png"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">The story of boy lost in the world of memories, he tries to collect stars in order to find way home.</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/lostWorld/1.png" src="./Game Projects Page_files/1(4).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/lostWorld/4.png" src="./Game Projects Page_files/4(3).png"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Lost World</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Game, PC, Mobile, Unity3D</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c2 r2" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 768px; top: 402px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2014</span>
+
+                            <!-- ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/forestRunner/1.png" src="./Game Projects Page_files/1(5).png"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">An infinite runner game that details the story of a lone wolf running wild in the forst. Unfortunately this game was abundonded half way.</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/forestRunner/2.jpg" src="./Game Projects Page_files/2.jpg"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/forestRunner/3.jpg" src="./Game Projects Page_files/3.jpg"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Forest Runner</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Game, PC, Mobile, Unity3D</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput --><article class="project ng-scope c0 r3" ng-repeat="game in main.games | filter:main.searchInput" style="width: 374px; left: 0px; top: 665px;">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow">
+
+                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                            <span class="badge ng-binding">2013</span>
+
+                            <!-- ngIf: game.haveProject == true -->
+
+                            <!-- ngIf: game.haveGithub == true -->
+
+                        </li>
+
+                        <a> <img class="media-object img-responsive" ng-src="img/Games/mazeRunner/1.jpg" src="./Game Projects Page_files/1.jpg"> </a>
+
+                        <li class="list-group-item background-color1 project-description" style="display: none;">
+                            <p>Description:</p>
+                            <p class="ng-binding">Player switches between first person and third person to solve maze puzzles</p>
+
+                            <!-- ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/2.jpg" src="./Game Projects Page_files/2(4).jpg"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/3.jpg" src="./Game Projects Page_files/3(4).jpg"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/4.jpg" src="./Game Projects Page_files/4.jpg"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/5.PNG" src="./Game Projects Page_files/5(2).PNG"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/6.PNG" src="./Game Projects Page_files/6(2).PNG"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/7.PNG" src="./Game Projects Page_files/7(1).PNG"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery --><!-- ngIf: game.haveGallery == true --><div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped ng-scope">
+                                <div><img class="media-object img-responsive" ng-src="img/Games/mazeRunner/8.PNG" src="./Game Projects Page_files/8.PNG"></div>
+                            </div><!-- end ngIf: game.haveGallery == true --><!-- end ngRepeat: galleryPic in game.gallery -->
+
+                        </li>
+
+                        <li class="list-group-item">
+                            <h4 class="media-heading move-text-center ng-binding">Maze Runner</h4>
+                        </li>
+
+                        <li class="list-group-item list-group-item-picture">
+                            <span class="label label-info ng-binding">Tags: Puzzld Game, PC, Mobile, Unity3D</span>
+                        </li>
+                    </ul>
+                </article><!-- end ngRepeat: game in main.games | filter:main.searchInput -->
+
+            </section>
+        </div>
+
+
+
+
+        <!--    This is the footer  -->
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted">Chenxing Alex Ouyang © 2015
+                    <a href="">Alex's Personal Webpage</a>
+                </p>
+            </div>
+        </div>
+
+        <!--   Scroll to the top  -->
+        <ul class="nav pull-right scroll-top">
+            <li><a href="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/gamesPage.html#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+        </ul>
+
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="./Game Projects Page_files/angular.min.js"></script>
+    <script src="./Game Projects Page_files/jquery.min.js"></script>
+    <script src="./Game Projects Page_files/jquery-ui.min.js"></script>
+    <script src="./Game Projects Page_files/bootstrap.min.js"></script>
+
+    <script src="./Game Projects Page_files/angularFilter.js"></script>
+    <script src="file:///Users/chenxingouyang/Documents/Github/AlexPersonalWebsite/js/navigation.js"></script>
+    <script src="./Game Projects Page_files/project.js"></script>
+    <script src="./Game Projects Page_files/water.js"></script>
+
+
+
+
+
+
+
+</body></html>

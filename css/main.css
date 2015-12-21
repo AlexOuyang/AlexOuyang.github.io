@@ -17,11 +17,14 @@ div {
     font-family: 'Dorsa', sans-serif;
 }
 
+
 /* Override link color in bootstrap*/
+
 a {
     color: black;
     text-decoration: none;
 }
+
 
 /* Getting rid of social icon link underline*/
 
@@ -132,7 +135,7 @@ body {
 }
 
 .visible {
-    float: left;
+    float: right;
     font-weight: 600;
     overflow: hidden;
     height: 40px;
@@ -145,7 +148,7 @@ body {
     line-height: 40px;
     font-family: 'Muli';
     color: #ecf0f1;
-    height: 40px;
+    height: 50px;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -153,44 +156,114 @@ body {
     margin-left: -118px;
 }
 
-.content:before {
+
+/*========= Games Page Flashing Text ==========*/
+
+.content #games:before {
     content: '[';
     position: absolute;
-    left: -5px;
+    margin-top: -5px;
+    left: 10px;
     line-height: 40px;
 }
 
-.content:after {
+.content #games:after {
     content: ']';
     position: absolute;
-    right: -10px;
+    margin-top: -5px;
+    right: -20px;
     line-height: 40px;
 }
 
-.content:after,
-.content:before {
+.content #games:after,
+.content #games:before {
     color: #4fe7c9;
-    font-size: 80px;
+    font-size: 60px;
     animation: 4s linear 0s normal none infinite opacity;
     -webkit-animation: 4s ease-out 0s normal none infinite opacity;
     -moz-animation: 4s ease-out 0s normal none infinite opacity;
     -o-animation: 4s ease-out 0s normal none infinite opacity;
 }
 
+.content #games {
+    margin-left: 20px;
+}
+
+
+/*============ Projects Page Flashing Text ===============*/
+
+.content #projects:before {
+    content: '[';
+    position: absolute;
+    margin-top: -5px;
+    left: -30px;
+    line-height: 40px;
+}
+
+.content #projects:after {
+    content: ']';
+    position: absolute;
+    margin-top: -5px;
+    right: -20px;
+    line-height: 40px;
+}
+
+.content #projects:after,
+.content #projects:before {
+    color: #4fe7c9;
+    font-size: 60px;
+    animation: 4s linear 0s normal none infinite opacity;
+    -webkit-animation: 4s ease-out 0s normal none infinite opacity;
+    -moz-animation: 4s ease-out 0s normal none infinite opacity;
+    -o-animation: 4s ease-out 0s normal none infinite opacity;
+}
+
+.content #projects {
+    margin-left: -20px;
+}
+
+
+/*========= Art Works Page Flashing Text ===========*/
+
+.content #artworks:before {
+    content: '[';
+    position: absolute;
+    margin-top: -5px;
+    left: -10px;
+    line-height: 40px;
+}
+
+.content #artworks:after {
+    content: ']';
+    position: absolute;
+    margin-top: -5px;
+    right: -30px;
+    line-height: 40px;
+}
+
+.content #artworks:after,
+.content #artworks:before {
+    color: #4fe7c9;
+    font-size: 60px;
+    animation: 4s linear 0s normal none infinite opacity;
+    -webkit-animation: 4s ease-out 0s normal none infinite opacity;
+    -moz-animation: 4s ease-out 0s normal none infinite opacity;
+    -o-animation: 4s ease-out 0s normal none infinite opacity;
+}
+
+.content #artworks {
+    margin-left: 0px;
+}
+
+
+/*=======================*/
 
 .content p {
     display: inline;
     float: left;
-/*    margin-left: 20px;*/
+    margin-top: -0px;
 }
 
-.content #games{
-    margin-left: 20px;
-}
-
-.content #artworks{
-    margin-left: 12px;
-}
 .content ul {
     margin-top: 0;
     padding-left: 110px;
