@@ -418,7 +418,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Pixel Me Ideling 2',
             tags: 'GameArt, PixelArt',
             description: "The pixel me",
-            img_url: "g",
+            img_url: "img/Art/pixelMe/meIdling2.gif",
             haveGallery: true,
             gallery: [
                 {
