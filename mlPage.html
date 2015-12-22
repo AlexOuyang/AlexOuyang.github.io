@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Game Projects Page</title>
+    <title>Machine Learning Page</title>
     <meta name="viewport" content="width=device-width">
 
     <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
@@ -61,20 +61,21 @@
 
                 <!--  User Profile Drop Down Menu and right navi buttons-->
                 <ul class="nav navbar-nav navbar-right navi-color">
-
+                    <!--   Sign in button shows up if the user is not signed in, other wise New Project and DropDown menu shows up-->
                     <li>
-                        <a href="otherProjects.html"><i class="fa fa-drupal"></i> Web Projects & Software</a>
+                        <a href="otherProjects.html"><i class="fa fa-drupal"></i> Web Projects & Software </a>
                     </li>
 
                     <li>
-                        <a href="gamesPage.html"><span class="navbar-current-page"><i class="fa fa-gamepad"></i> My Games </a></span>
+                        <a href="gamesPage.html"><i class="fa fa-gamepad"></i> My Games </a>
                     </li>
-            
+
                     <li>
                         <a href="artPage.html"><i class="fa fa-dot-circle-o"></i> 2D & 3D Art Works </a>
                     </li>
+    
                     <li>
-                        <a href="mlPage.html"> ⊷ Machine Learning </a>
+                        <a href="#"><span class="navbar-current-page"> ⊷ Machine Learning </span></a>
                     </li>
 
                     <li class="dropdown">
@@ -113,13 +114,13 @@
 
     <!-- This is the Header Text-->
     <div class='content'>
-        <div id="games" class='visible'>
-            <p>My Games</p>
+        <div id="artworks" class='visible'>
+            <p>ML Projects</p>
         </div>
     </div>
 
    <!-- This is the background image behind the header text-->
-    <div id="games-background">
+    <div id="ml-background">
     </div>
 
 
@@ -131,37 +132,37 @@
         <div id="project-container" class="">
             <section id="pinBoot">
 
-                <article class="project" ng-repeat="game in main.games | filter:main.searchInput">
+                <article class="project" ng-repeat="ml in main.machineLearning | filter:main.searchInput">
                     <ul class="list-group">
                         <li class="list-group-item shadow">
 
                             <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
-                            <span class="badge">{{game.year}}</span>
+                            <span class="badge">{{ml.year}}</span>
 
-                            <button ng-if="game.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{game.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
+                            <button ng-if="ml.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{ml.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
 
-                            <button ng-if="game.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{game.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
+                            <button ng-if="ml.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{ml.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
 
                         </li>
 
-                        <a> <img class="media-object img-responsive" ng-src="{{game.img_url}}" /> </a>
+                        <a> <img class="media-object img-responsive" ng-src="{{ml.img_url}}" /> </a>
 
                         <li class="list-group-item background-color1 project-description">
                             <p>Description:</p>
-                            <p>{{game.description}}</p>
+                            <p>{{ml.description}}</p>
 
-                            <div ng-if="game.haveGallery == true" ng-repeat="galleryPic in game.gallery" class="table table-striped">
+                            <div ng-if="ml.haveGallery == true" ng-repeat="galleryPic in ml.gallery" class="table table-striped">
                                 <div><img class="media-object img-responsive" ng-src="{{galleryPic.url}}" /></div>
                             </div>
 
                         </li>
 
                         <li class="list-group-item">
-                            <h4 class="media-heading move-text-center">{{game.title}}</h4>
+                            <h4 class="media-heading move-text-center">{{ml.title}}</h4>
                         </li>
 
                         <li class="list-group-item list-group-item-picture">
-                            <span class="label label-info">Tags: {{game.tags}}</span>
+                            <span class="label label-info">Tags: {{ml.tags}}</span>
                         </li>
                     </ul>
                 </article>
@@ -190,9 +191,6 @@
 
 
     </div>
-
-
-
 
 
 

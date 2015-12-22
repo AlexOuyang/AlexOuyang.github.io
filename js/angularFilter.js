@@ -9,7 +9,55 @@ angular.module('ngFilter', []);
 angular.module('ngFilter').controller("MainController", function ($scope) {
     var vm = this;
     vm.searchInput = '';
-
+    
+    
+// These are my machine learning projects
+    vm.machineLearning = [
+        {
+            title: 'Handwriting Digit Segmentation and Recognition',
+            tags: 'Machine Learning, Python, Theano, OpenCV',
+            description: 'Digit classification using multilayer perceptron trained on MNIST dataset build in Theano, and digit segmentation using edge detection, adaptive thresholding and other image filtering methods from openCV and tested on the Street View House Number Dataset written in Python.',
+            img_url: "img/MachineLearning/digitRecognition/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/MachineLearning/digitRecognition/2.png",
+                }, {
+                    url: "img/MachineLearning/digitRecognition/3.png",
+                }, {
+                    url: "img/MachineLearning/digitRecognition/4.png",
+                }],
+            year: 2015,
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/OCR",
+        }, {
+            title: 'Real Time Face Detection and Recognition',
+            tags: 'Machine Learning, Python, Theano, OpenCV',
+            description: 'Achieved real time face tracking in OpenCV and optimized haarcascade for up to 45 degrees of rotation vavriancy. Built SVM classification model for face recognition in python from the top 150 eigenvectors of the 2452 training samples in the Extended Yale Face Dataset B extracted using PCA. An accuracy of 93.3% is obtained with the Radial Basis Function kernel on the set of 613 testing samples.',
+            img_url: "img/MachineLearning/faceRecognition/face_sad.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/MachineLearning/faceRecognition/face_side.png",
+                }, {
+                    url: "img/MachineLearning/faceRecognition/face_left.png",
+                }, {
+                    url: "img/MachineLearning/faceRecognition/face_eigen.png",
+                }, {
+                    url: "img/MachineLearning/faceRecognition/face_predict.png",
+                }],
+            year: 2014,
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/RealTimeFaceRecognition",
+        }];
+        
+        
+    
+        
     // These are my other projects
     vm.projects = [
         {
