@@ -103,6 +103,26 @@ a:active {
 /* This handles the paralaxing */
 /*=========  Games Page Headers Including Background Image ===========*/
 
+#games-background {
+    background: url("../img/Games/gamesHeader.png")
+        repeat top center fixed;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+
+
 header {
     text-align: center;
 /*    background: rgba(0, 0, 0, 0.8) url("../img/game.gif") no-repeat center center fixed;*/

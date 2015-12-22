@@ -9,9 +9,9 @@ angular.module('ngFilter', []);
 angular.module('ngFilter').controller("MainController", function ($scope) {
     var vm = this;
     vm.searchInput = '';
-    
-    
-// These are my machine learning projects
+
+
+    // These are my machine learning projects
     vm.machineLearning = [
         {
             title: 'Handwriting Digit Segmentation and Recognition',
@@ -54,10 +54,10 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/RealTimeFaceRecognition",
         }];
-        
-        
-    
-        
+
+
+
+
     // These are my other projects
     vm.projects = [
         {
@@ -75,6 +75,35 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/3DGrapher",
+        }, {
+            title: 'My Website V2.0',
+            tags: 'Web Development, Front-end',
+            description: 'This is the website you are looking at.',
+            img_url: "img/Projects/myWebsite2/website.gif",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/myWebsite2/7.png",
+                }, {
+                    url: "img/Projects/myWebsite2/2.png",
+                }, {
+                    url: "img/Projects/myWebsite2/3.png",
+                }, {
+                    url: "img/Projects/myWebsite2/4.png",
+                }, {
+                    url: "img/Projects/myWebsite2/5.png",
+                }, {
+                    url: "img/Projects/myWebsite2/6.png",
+                }, {
+                    url: "img/Projects/myWebsite2/0.png",
+                }, {
+                    url: "img/Projects/myWebsite2/1.png",
+                }],
+            year: 2015,
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/AlexPersonalWebsite",
         }, {
             title: 'HackStatus (SD Hacks)',
             tags: 'Hackathon, Front-end, Web',
