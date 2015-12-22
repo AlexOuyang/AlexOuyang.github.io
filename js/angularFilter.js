@@ -108,13 +108,13 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'HackStatus (SD Hacks)',
             tags: 'Hackathon, Front-end, Web',
             description: 'HackStatus is a website that allows its users to share hackathon projects and collaborate. Created the entire front end graphical interface including project page, user profile page, main page, registration form, animations using jQuery, angularJS, HTML5 and CSS.',
-            img_url: "img/Projects/hackStatus/hackStatus.gif",
+            img_url: "img/Projects/hackStatus/2.png",
             haveGallery: true,
             gallery: [
                 {
                     url: "img/Projects/hackStatus/1.png",
                 }, {
-                    url: "img/Projects/hackStatus/2.png",
+                    url: "img/Projects/hackStatus/hackStatus.gif",
                 }, {
                     url: "img/Projects/hackStatus/3.png",
                 }, {
@@ -137,11 +137,11 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Personal Website V0.1',
             tags: 'Front-end, Web',
             description: 'My first personal website.',
-            img_url: "img/Projects/myWebsite1/myWebsite.gif",
+            img_url: "img/Projects/myWebsite1/1.png",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Projects/myWebsite1/1.png",
+                    url: "img/Projects/myWebsite1/myWebsite.gif",
                 }, {
                     url: "img/Projects/myWebsite1/2.png",
                 }, {
@@ -282,11 +282,11 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Reversal (Web Game Made For JS13K Hackathon)',
             tags: 'Game, Web, HTML5, Javascript',
             description: 'Traversal is a game that allows you to teleport while gaining higher jumping velocity, teleportation is an important part of the game. It is a 2D side scroller html5 game created from scratch using pure Javascript. I also implemented features including code generated environmental art, Newtonian physics, fluid simulations and tile map generation.',
-            img_url: "img/Games/reversal/reversal.gif",
+            img_url: "img/Games/reversal/1.png",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Games/reversal/1.png",
+                    url: "img/Games/reversal/reversal.gif",
                 }, {
                     url: "img/Games/reversal/2.png",
                 }],
