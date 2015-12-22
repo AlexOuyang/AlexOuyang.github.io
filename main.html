@@ -6,7 +6,7 @@
     <title>Alex's Main Page</title>
 
 
-        <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/loadingAnimation.css">
     <link rel="stylesheet" href="css/profileHeader.css">
-    
-<!--    <link rel="stylesheet" href="css/reset.css">-->
+
+    <!--    <link rel="stylesheet" href="css/reset.css">-->
     <link rel="stylesheet" href="css/mainPage.css">
 
 
@@ -24,10 +24,20 @@
 
 </head>
 
+
 <body>
 
-    
-        <!--   This is the page loading icon   -->
+
+
+    <!--
+    <div id="create-project" class="button">
+        <img class="media-object img-circle img-responsive" style="width: 80px; height: 70px;" src="img/me.png" />
+    </div>
+-->
+
+
+    <!--   This is the page loading icon   -->
+    <!--
     <table id="doc-loader">
         <tr>
             <td>
@@ -35,6 +45,7 @@
             </td>
         </tr>
     </table>
+-->
 
 
     <!-- This is the navigation bar -->
@@ -61,8 +72,9 @@
 
                 <!--  User Profile Drop Down Menu and right navi buttons-->
                 <ul class="nav navbar-nav navbar-right navi-color">
+
                     <li>
-                        <a href="otherProjects.html"><i class="fa fa-drupal"></i> Web Projects & Software </span></a>
+                        <a href="otherProjects.html"><i class="fa fa-drupal"></i> Web Projects & Software </a>
                     </li>
 
                     <li>
@@ -70,10 +82,19 @@
                     </li>
 
                     <li>
-                        <a href="artPage.html"><i class="fa fa-dot-circle-o"></i> 2D & 3D Art Works </span></a>
+                        <a href="artPage.html"><i class="fa fa-dot-circle-o"></i> 2D & 3D Art Works </a>
                     </li>
                     <li>
-                        <a href="#">⊷ Machine Learning </span></a>
+                        <a href="#">⊷ Machine Learning </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="main.html">
+                            <span class="navbar-current-page">Alex</span>
+                            <div class="list-group-item-icon">
+                                <img class="media-object img-circle img-responsive" style="width: 40px; height: 40px;" src="img/me.png" />
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -90,16 +111,29 @@
     <div id="shell">
 
         <nav>
-            <ul>
-                <li class="red"></li>
-                <li class="yellow"></li>
-                <li class="green"></li>
-            </ul>
+            <div id="social-icons">
+                <a href="https://www.facebook.com/chenxing.ouyang">
+                    <div class="red social facebook">&#62220;</div>
+                </a>
+                <a href="https://www.linkedin.com/in/chenxing-ouyang-4b21bb57">
+                    <div class="yellow social linkedin">&#62232;</div>
+                </a>
+                <a href="http://codepen.io/AlexO/">
+                    <div class="green social dribble">&#62235;</div>
+                </a>
+
+            </div>
         </nav>
 
         <div id="myTypingText">
-            <div id="newTime"></div> : [<span class="name">alex</span><span class="atName">@chenxingOuyang.local</span>]<span> ~</span>
+            <div id="newTime"></div> : [<span class="name">alex</span><span class="atName">@alex.ouyang.local</span>]<span> ~</span>
             <br> <span>→</span>
+        </div>
+
+
+        <div>
+            <img class="media-object img-circle img-responsive" style="margin-top: 80px; margin-left: 0px; width: 100px; height: 100px;" src="img/Art/pixelMe/meIdling2.gif" />
+
         </div>
 
     </div>
