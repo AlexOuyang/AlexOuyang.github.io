@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //slowly fade out loading image when the website loads
     $(window).load(function () {
-//        $('#doc-loader').fadeOut('fast');
+        $('#doc-loader').fadeOut('fast');
 
         // Create bouncy effects for user profile
         $('#profile-image').addClass("animated bounceInDown");
