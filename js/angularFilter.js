@@ -146,8 +146,6 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Projects/myWebsite1/2.png",
                 }, {
                     url: "img/Projects/myWebsite1/3.png",
-                }, {
-                    url: "img/Projects/myWebsite1/4.png",
                 }],
             year: 2014,
             haveProject: false,
@@ -215,7 +213,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Gesture Controlled 3D Cube Photo Gallery',
             tags: 'Web, Sinatra, Experiment, Canvas',
             description: 'A small photog gallery made using Ruby + Sinatra, where users can upload pictures to the six sides of a cube. To rotate the cube, simple wave your hand up down, left or right.',
-            img_url: "img/WebArt/cube/Cube.png",
+            img_url: "img/WebArt/cube/cube.png",
             year: 2013,
             haveProject: false,
             view_project_url: "",
@@ -308,8 +306,6 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Games/insatiableSpider/0.png",
                 }, {
                     url: "img/Games/insatiableSpider/2.png",
-                }, {
-                    url: "img/Games/insatiableSpider/3.png",
                 }, {
                     url: "img/Games/insatiableSpider/4.png",
                 }, {
@@ -418,26 +414,14 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Pixel Me Ideling 2',
             tags: 'GameArt, PixelArt',
             description: "The pixel me",
-            img_url: "img/Art/pixelMe/meIdling2.gif",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img/Art/pixelMe/me2.png",
-                }],
+            img_url: "img/Art/pixelMe/me2.png",
             year: 2015,
 
         }, {
             title: 'Pixel Me Jumping',
             tags: 'GameArt, PixelArt',
             description: "The pixel me",
-            img_url: "img/Art/pixelMe/meJumping.gif",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img/Art/pixelMe/me.png",
-                }, {
-                    url: "img/Art/pixelMe/me2.png",
-                }],
+            img_url: "img/Art/pixelMe/me.png",
             year: 2015,
 
     }, {
