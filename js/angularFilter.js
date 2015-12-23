@@ -250,7 +250,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         {
             title: 'Powerful Poptart (In Progress)',
             tags: 'Game, PC, Mobile, Unity3D',
-            description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vendictive hamster boss. Designed and implemented in game puzzle, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
+            description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vindictive hamster boss. Designed and implemented in game puzzle, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
             img_url: "img/Games/powerfulPoptart/7.png",
             haveGallery: true,
             gallery: [
