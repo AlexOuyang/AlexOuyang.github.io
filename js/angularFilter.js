@@ -79,12 +79,10 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'My Website V2.0',
             tags: 'Web Development, Front-end',
             description: 'This is the website you are looking at.',
-            img_url: "img/Projects/myWebsite2/website.gif",
+            img_url: "img/Projects/myWebsite2/7.png",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Projects/myWebsite2/7.png",
-                }, {
                     url: "img/Projects/myWebsite2/2.png",
                 }, {
                     url: "img/Projects/myWebsite2/3.png",
@@ -114,8 +112,6 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 {
                     url: "img/Projects/hackStatus/1.png",
                 }, {
-                    url: "img/Projects/hackStatus/hackStatus.gif",
-                }, {
                     url: "img/Projects/hackStatus/3.png",
                 }, {
                     url: "img/Projects/hackStatus/4.png",
@@ -141,8 +137,6 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Projects/myWebsite1/myWebsite.gif",
-                }, {
                     url: "img/Projects/myWebsite1/2.png",
                 }, {
                     url: "img/Projects/myWebsite1/3.png",
@@ -424,12 +418,6 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             img_url: "img/Art/pixelMe/me.png",
             year: 2015,
 
-    }, {
-            title: 'Short Guy',
-            tags: 'GameArt, PixelArt',
-            description: "Some pixel art I created for a game",
-            img_url: "img/Art/shortGuy/shortGuy.gif",
-            year: 2015,
     }, {
             title: 'Tron Model - steelBlue',
             tags: 'Art, 3D Modeling, Blender',

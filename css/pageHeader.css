@@ -1,0 +1,622 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*    background-color: #e8e7e2;*/
+    background-color: black;
+    /*        background-color: #f9f9fb;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    font-family: 'Dorsa', sans-serif;
+}
+
+
+/* Override link color in bootstrap*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Getting rid of social icon link underline*/
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/* Page buttons */
+
+.pager li>a,
+.pager li>span {
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fb3468;
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    transition: all 0.1s ease-in-out;
+}
+
+.pager li>a:hover,
+.pager li>span:hover {
+    font-size: 40px;
+    color: #1f2532;
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #e9e9e9;
+    border: 0px solid #ddd;
+    border-radius: 0px;
+}
+
+/*========= Games Page Flashing Text ==========*/
+
+body {
+    /*  width: 100%;*/
+    /*  height: 100%;*/
+    /*  position: relative;*/
+    background-color: #1f2532;
+}
+
+.visible {
+    float: right;
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+}
+
+.content {
+    z-index: 100;
+    width: 215px;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Muli';
+    color: #ecf0f1;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -118px;
+}
+
+.content #games:before {
+    content: '[';
+    position: absolute;
+    margin-top: -5px;
+    left: 10px;
+    line-height: 40px;
+}
+
+.content #games:after {
+    content: ']';
+    position: absolute;
+    margin-top: -5px;
+    right: -20px;
+    line-height: 40px;
+}
+
+.content #games:after,
+.content #games:before {
+    color: #4fe7c9;
+    font-size: 60px;
+    animation: 4s linear 0s normal none infinite opacity;
+    -webkit-animation: 4s ease-out 0s normal none infinite opacity;
+    -moz-animation: 4s ease-out 0s normal none infinite opacity;
+    -o-animation: 4s ease-out 0s normal none infinite opacity;
+}
+
+.content #games {
+    margin-left: 20px;
+}
+
+
+/*================= Projects Page Flashing Text ==================*/
+
+.content #projects:before {
+    content: '[';
+    position: absolute;
+    margin-top: -5px;
+    left: -30px;
+    line-height: 40px;
+}
+
+.content #projects:after {
+    content: ']';
+    position: absolute;
+    margin-top: -5px;
+    right: -20px;
+    line-height: 40px;
+}
+
+.content #projects:after,
+.content #projects:before {
+    color: #4fe7c9;
+    font-size: 60px;
+    animation: 4s linear 0s normal none infinite opacity;
+    -webkit-animation: 4s ease-out 0s normal none infinite opacity;
+    -moz-animation: 4s ease-out 0s normal none infinite opacity;
+    -o-animation: 4s ease-out 0s normal none infinite opacity;
+}
+
+.content #projects {
+    margin-left: -20px;
+}
+
+
+/*========= Art Works Page Flashing Text ===========*/
+
+.content #artworks:before {
+    content: '[';
+    position: absolute;
+    margin-top: -5px;
+    left: -10px;
+    line-height: 40px;
+}
+
+.content #artworks:after {
+    content: ']';
+    position: absolute;
+    margin-top: -5px;
+    right: -30px;
+    line-height: 40px;
+}
+
+.content #artworks:after,
+.content #artworks:before {
+    color: #4fe7c9;
+    font-size: 60px;
+    animation: 4s linear 0s normal none infinite opacity;
+    -webkit-animation: 4s ease-out 0s normal none infinite opacity;
+    -moz-animation: 4s ease-out 0s normal none infinite opacity;
+    -o-animation: 4s ease-out 0s normal none infinite opacity;
+}
+
+.content #artworks {
+    margin-left: 0px;
+}
+
+
+/*=======================*/
+
+.content p {
+    display: inline;
+    float: left;
+    margin-top: -0px;
+}
+
+.content ul {
+    margin-top: 0;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+    animation: 6s linear 0s normal none infinite change;
+    -webkit-animation: 6s linear 0s normal none infinite change;
+    -moz-animation: 6s linear 0s normal none infinite change;
+    -o-animation: 6s linear 0s normal none infinite change;
+}
+
+.content ul li {
+    line-height: 40px;
+    margin: 0;
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes change {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -40px;
+    }
+    40% {
+        margin-top: -40px;
+    }
+    50% {
+        margin-top: -80px;
+    }
+    65% {
+        margin-top: -80px;
+    }
+    75% {
+        margin-top: -40px;
+    }
+    85% {
+        margin-top: -40px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes change {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -40px;
+    }
+    40% {
+        margin-top: -40px;
+    }
+    50% {
+        margin-top: -80px;
+    }
+    65% {
+        margin-top: -80px;
+    }
+    75% {
+        margin-top: -40px;
+    }
+    85% {
+        margin-top: -40px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+
+/* Animatin */
+
+canvas {
+    position: fixed;
+    height: 100%;
+    z-index: -100;
+}
+
+
+
+/*=========  Main Page Headers Including Background Image and Social Icons ===========*/
+
+
+/* Getting rid of social icon link underline*/
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/*=========  Machine Learning Page Headers Including Background Image ===========*/
+
+#ml-background {
+    background: url("../img/MachineLearning/mlHeaderImageDarker.png") repeat top center fixed;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+/*=========  Main Page Headers Including Background Image ===========*/
+
+#main-background {
+    background: url("../img/Games/powerfulPoptart/powerfulPoptartDarker.png") repeat top center fixed;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+/*=========  Other Projects Page Headers Including Background Image ===========*/
+
+#projects-background {
+    background: url("../img/WebArt/webArtHeader.png") repeat top center fixed;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+/*=========  Artworks Page Headers Including Background Image ===========*/
+
+#art-background {
+    background: url("../img/Art/artCoverPhotoDark.png")
+        repeat top center fixed;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+/* This handles the paralaxing */
+/*=========  Games Page Headers Including Background Image ===========*/
+
+#games-background {
+    background: url("../img/Games/gamesHeader.png")
+        repeat top center fixed;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    background-size: 100% auto;
+    margin-top: 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+header {
+    text-align: center;
+/*    background: rgba(0, 0, 0, 0.8) url("../img/game.gif") no-repeat center center fixed;*/
+/*    background-color: black;*/
+/*    background-size: 100% 100%;*/
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+/* wraps around projects and footer for parallaxing in user profile page */
+/* Projects Wrapper for Games Page*/
+.content-wrapper-projects-page {
+    background: #e9e9e9;
+    top: 55%;
+    min-height: 10%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    /* margin-left: 4%; */
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.1s ease-in-out;
+}
+
+
+/* Projects Wrapper for Main Page*/
+.content-wrapper-main-page {
+    background: #e9e9e9;
+    top: 100%;
+    min-height: 10%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    transition: all 0.1s ease-in-out;
+}
+
+
+/* Here ends the Parallaxing */
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+/*
+header #profile-image {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 1);
+    transition: all 0.1s ease-in-out;
+}
+
+#profile-image:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+#profile-image:active {
+    -webkit-box-shadow: inset 10px 10px 75px -32px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 10px 10px 75px -32px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 10px 10px 75px -32px rgba(0, 0, 0, 1);
+}
+*/
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    margin-top: 10px;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+
+/*========== Social Icons ===========*/
+
+
+/*
+#social-icons {
+    margin-top: -80px;
+    background: #ddd;
+    padding: 10px 0;
+    text-align: center;
+}
+*/
+
+.social {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px 10px;
+    font-family: Entypo;
+    font-size: 25px;
+    text-align: center;
+    color: #ecf0f1;
+    border-radius: 50%;
+    background: #eee;
+    overflow: hidden;
+    transition: color .3s;
+/*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.3);*/
+    transition: all 0.1s ease-in-out;
+}
+
+.social:hover {
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.social:active {
+    -webkit-box-shadow: inset 10px 10px 75px -32px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 10px 10px 75px -32px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 10px 10px 75px -32px rgba(0, 0, 0, 0.3);
+}
+
+/*
+.social {
+        box-shadow: rgb(210, 210, 210) 1px 1px, rgb(210, 210, 210) 2px 2px, rgb(211, 211, 211) 3px 3px, rgb(211, 211, 211) 4px 4px, rgb(211, 211, 211) 5px 5px, rgb(212, 212, 212) 6px 6px, rgb(212, 212, 212) 7px 7px, rgb(212, 212, 212) 8px 8px, rgb(213, 213, 213) 9px 9px, rgb(213, 213, 213) 10px 10px, rgb(214, 214, 214) 11px 11px, rgb(214, 214, 214) 12px 12px, rgb(214, 214, 214) 13px 13px, rgb(215, 215, 215) 14px 14px, rgb(215, 215, 215) 15px 15px, rgb(215, 215, 215) 16px 16px, rgb(216, 216, 216) 17px 17px, rgb(216, 216, 216) 18px 18px, rgb(216, 216, 216) 19px 19px, rgb(217, 217, 217) 20px 20px, rgb(217, 217, 217) 21px 21px, rgb(218, 218, 218) 22px 22px, rgb(218, 218, 218) 23px 23px, rgb(218, 218, 218) 24px 24px, rgb(219, 219, 219) 25px 25px, rgb(219, 219, 219) 26px 26px, rgb(219, 219, 219) 27px 27px, rgb(220, 220, 220) 28px 28px, rgb(220, 220, 220) 29px 29px, rgb(221, 221, 221) 30px 30px;
+    text-shadow: rgb(226, 226, 226) 1px 1px, rgb(227, 227, 227) 2px 2px, rgb(227, 227, 227) 3px 3px, rgb(228, 228, 228) 4px 4px, rgb(229, 229, 229) 5px 5px, rgb(229, 229, 229) 6px 6px, rgb(230, 230, 230) 7px 7px, rgb(230, 230, 230) 8px 8px, rgb(231, 231, 231) 9px 9px, rgb(232, 232, 232) 10px 10px, rgb(232, 232, 232) 11px 11px, rgb(233, 233, 233) 12px 12px, rgb(233, 233, 233) 13px 13px, rgb(234, 234, 234) 14px 14px, rgb(235, 235, 235) 15px 15px, rgb(235, 235, 235) 16px 16px, rgb(236, 236, 236) 17px 17px, rgb(236, 236, 236) 18px 18px, rgb(237, 237, 237) 19px 19px, rgb(238, 238, 238) 20px 20px;
+}
+*/
+
+
+/**
+ * Profile image component
+ */
+
+.profile-header-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 54px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #51D2B7;
+}
+
+.profile-header {
+    margin-top: 43px;
+}
+
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: rgb(81, 210, 183);
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+}

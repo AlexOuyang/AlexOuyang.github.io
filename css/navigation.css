@@ -35,16 +35,16 @@
 
 /*======= color of navibar =====*/
 .navbar-inverse {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
-    border-bottom: rgba(0, 0, 0, 0.5) 0px solid;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+    border-bottom: rgba(0, 0, 0, 0.4) 0px solid;
     /*    max-height: 50px;*/
 }
 
 .navbar-inverse:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
-    border-bottom: rgba(0, 0, 0, 0.5) 0px solid;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.8);
+    border-bottom: rgba(0, 0, 0, 0.8) 0px solid;
     /*    max-height: 50px;*/
 }
 
@@ -107,12 +107,14 @@
     box-shadow: none;
 }
 
+/* Highlight 1st Navi Tab */
 .nav li:hover:nth-child(8n+1),
 .nav li.active:nth-child(8n+1) {
     border-top: #4ABC96 3px solid;
     color: #4ABC96;
 }
 
+/* Highlight 2nd Navi Tab */
 .nav li:hover:nth-child(8n+2),
 .nav li.active:nth-child(8n+2) {
     border-top: #4ABC96 3px solid;
@@ -133,28 +135,12 @@
 
 }
 
-
-/*
 .nav li:hover:nth-child(8n+5),
 .nav li.active:nth-child(8n+5) {
-    border-bottom: #DB9DBE 3px solid;
-}
+    border-top: #4ABC96 3px solid;
+    color: #4ABC96;
 
-.nav li:hover:nth-child(8n+6),
-.nav li.active:nth-child(8n+6) {
-    border-bottom: #C49CDE 3px solid;
 }
-
-.nav li:hover:nth-child(8n+7),
-.nav li.active:nth-child(8n+7) {
-    border-bottom: #669AE1 3px solid;
-}
-
-.nav li:hover:nth-child(8n+8),
-.nav li.active:nth-child(8n+8) {
-    border-bottom: #62C2E4 3px solid;
-}
-*/
 
 
 /* Scroll to top */
