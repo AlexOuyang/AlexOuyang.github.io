@@ -1,4 +1,4 @@
-var myDescription = "My name is Alex or Chenxing, a developer currently studying at UCSD. My dream is to become a Computational Scientist. I am deeply puzzled by the complexity of life and the universe, and I wish to know more about them. I love making games and interactive art, doing breakdancing, playing guitar, making games, drawing anime characters and watching anime! I also enjoy reading in fields related to math, physics, philosophy and psychology! Learning is what keeps me alive!";
+var myDescription = "I am a student at UCSD who enjoys designing games and working with Front-end technologies. My goal is to live a examined life. I am deeply puzzled by the complexity of life and the universe, and I wish to know more about them. My hobbies including breakdancing, playing guitar, drawing anime characters and watching anime. I like to read books related to philosophy and psychology in my spare time. Learning is what keeps me alive!";
 
 var textArray = myDescription.split("");
 var loopTimer;
