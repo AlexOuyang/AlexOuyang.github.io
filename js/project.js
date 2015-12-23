@@ -1,7 +1,8 @@
 $(document).ready(function () {
     //slowly fade out loading image when the website loads
+    $('#doc-loader').fadeOut('slow');
+
     $(window).load(function () {
-//        $('#doc-loader').fadeOut('fast');
 
         // Create bouncy effects for user profile
         $('#profile-image').addClass("animated bounceInDown");
@@ -98,7 +99,7 @@ $(document).ready(function () {
         margin_bottom: 50,
         single_column_breakpoint: 800
     });
-    
+
     $('#gameSection').pinterest_grid({
         no_columns: 3,
         padding_x: 10,
