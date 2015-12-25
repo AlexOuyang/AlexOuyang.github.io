@@ -97,16 +97,9 @@ $(document).ready(function () {
         padding_x: 10,
         padding_y: 10,
         margin_bottom: 50,
-        single_column_breakpoint: 800
+        single_column_breakpoint: 1000
     });
 
-    $('#gameSection').pinterest_grid({
-        no_columns: 3,
-        padding_x: 10,
-        padding_y: 10,
-        margin_bottom: 50,
-        single_column_breakpoint: 800
-    });
 });
 
 

@@ -27,7 +27,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/MachineLearning/digitRecognition/4.png",
                 }],
-            year: 2015,
+            year: "Sept, 2015",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
@@ -48,7 +48,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/MachineLearning/faceRecognition/face_predict.png",
                 }],
-            year: 2014,
+            year: "Oct, 2014",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
@@ -61,20 +61,16 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my other projects
     vm.projects = [
         {
-            title: '3D Grapher (In Progress)',
+            title: 'Probabilistic Graphical Model Creator (In Progress)',
             tags: 'Javascript, Front-end, Web',
-            description: 'Realtime web-based 3D function grapher made in javascript',
-            img_url: "img/Projects/3dGrapher/1.png",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img/Projects/3dGrapher/2.png",
-                }],
-            year: 2015,
+            description: 'A framework for creating models and diagrams for visualizing the theory of learning and communication using D3.js and canvas.',
+            img_url: "img/Projects/PGMCreator/1.png",
+            haveGallery: false,
+            year: "Oct, 2015",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
-            github_url: "https://github.com/AlexOuyang/3DGrapher",
+            github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
         }, {
             title: 'My Website V2.0',
             tags: 'Web Development, Front-end',
@@ -97,7 +93,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Projects/myWebsite2/1.png",
                 }],
-            year: 2015,
+            year: "Dec, 2015",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
@@ -124,11 +120,26 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Projects/hackStatus/8.png",
                 }],
-            year: 2015,
+            year: "Sept, 2015",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/HackStatus",
+        }, {
+            title: '3D Grapher (In Progress)',
+            tags: 'Javascript, Front-end, Web',
+            description: 'Realtime web-based 3D function grapher made in javascript',
+            img_url: "img/Projects/3dGrapher/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/3dGrapher/2.png",
+                }],
+            year: "Nov, 2015",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/3DGrapher",
         }, {
             title: 'Personal Website V0.1',
             tags: 'Front-end, Web',
@@ -141,7 +152,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Projects/myWebsite1/3.png",
                 }],
-            year: 2014,
+            year: "Oct, 2014",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
@@ -151,14 +162,14 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             tags: 'Hardware, Arduino',
             description: 'The purpose of this project is to create a systems and algorithms necessary to allow a quadcopter to autonomously locate and land on a station target using C and Arduino Uno micro-controller. (In progress)',
             img_url: "img/Projects/quadcopter/quadcopter.jpg",
-            year: 2015,
+            year: "Jun, 2015",
 
         }, {
             title: 'MorningSignOut (Internship)',
             tags: 'Hackathon, Front-end, Web',
             description: 'Created an android app that allows MorningSignOut readers to access website articles via mobile devices. Designed test procedures, performed functional testings on code, documented source code and fixed bugs. Maintained the development and the structure of the MorningSignOut website.',
             img_url: "img/Projects/mso/1.jpg",
-            year: 2015,
+            year: "Feb, 2015",
             haveProject: false,
             haveGithub: false,
         }, {
@@ -177,7 +188,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/WebArt/entangled/4.png",
                 }],
-            year: 2014,
+            year: "Aug, 2014",
             haveProject: true,
             view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
             haveGithub: true,
@@ -198,17 +209,17 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/WebArt/scattered/4.png",
                 }],
-            year: 2014,
+            year: "Jun, 2014",
             haveProject: true,
             view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
             haveGithub: true,
-            github_url: "https://github.com/AlexOuyang/CanvasAnimations/tree/master/LeapMotion%20Minimalist%20Pattern%20Trials",
+            github_url: "https://github.com/AlexOuyang/CanvasAnimations/tree/master/ScatteredAnimation",
         }, {
             title: 'Gesture Controlled 3D Cube Photo Gallery',
             tags: 'Web, Sinatra, Experiment, Canvas',
             description: 'A small photog gallery made using Ruby + Sinatra, where users can upload pictures to the six sides of a cube. To rotate the cube, simple wave your hand up down, left or right.',
             img_url: "img/WebArt/cube/cube.png",
-            year: 2013,
+            year: "Nov, 2013",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
@@ -218,7 +229,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             tags: 'Web, Front-end, HTML5',
             description: 'Something Made for a friend with Love ❤❤❤',
             img_url: "img/WebArt/sliderOfLove/ImageSliderOfLove.png",
-            year: 2012,
+            year: "Jan, 2013",
             haveProject: true,
             view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
             haveGithub: true,
@@ -239,7 +250,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Projects/remaint/4.png",
                 }],
-            year: 2012,
+            year: "Jun, 2012",
 
         }];
 
@@ -267,7 +278,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/powerfulPoptart/6.png",
                 }],
-            year: 2015,
+            year: "Jan, 2015",
             haveProject: true,
             view_project_url: "http://nxtlvlgames.tumblr.com/",
             haveGithub: false,
@@ -284,7 +295,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/reversal/2.png",
                 }],
-            year: 2015,
+            year: "Jul, 2015",
             haveProject: true,
             view_project_url: "http://js13kgames.com/entries/reversal",
             haveGithub: true,
@@ -307,7 +318,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/insatiableSpider/6.png",
                 }],
-            year: 2015,
+            year: "Jul, 2015",
             haveProject: true,
             view_project_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
             haveGithub: true,
@@ -328,7 +339,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/intoTheLight/4.png",
                 }],
-            year: 2015,
+            year: "Apr, 2015",
             haveProject: true,
             view_project_url: "http://nxtlvl.itch.io/into-the-light",
             haveGithub: false,
@@ -345,7 +356,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/lostWorld/4.png",
                 }],
-            year: 2014,
+            year: "Mar, 2014",
             haveProject: true,
             view_project_url: "https://www.youtube.com/watch?v=jFnByirxdkc",
             haveGithub: false,
@@ -362,7 +373,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/forestRunner/3.jpg",
                 }],
-            year: 2014,
+            year: "Feb, 2014",
             haveProject: false,
             view_project_url: "",
             haveGithub: false,
@@ -390,7 +401,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }, {
                     url: "img/Games/mazeRunner/8.PNG",
                 }],
-            year: 2013,
+            year: "Jun, 2013",
             haveProject: false,
             view_project_url: "",
             haveGithub: false,
