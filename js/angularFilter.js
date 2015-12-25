@@ -66,7 +66,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             description: 'A framework for creating models and diagrams for visualizing the theory of learning and communication using D3.js and canvas.',
             img_url: "img/Projects/PGMCreator/1.png",
             haveGallery: false,
-            year: "Oct, 2015",
+            year: "Dec, 2015",
             haveProject: false,
             view_project_url: "",
             haveGithub: true,
