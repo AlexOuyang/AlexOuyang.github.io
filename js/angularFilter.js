@@ -65,9 +65,13 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             tags: 'Javascript, Front-end, Web',
             description: 'A framework for creating models and diagrams for visualizing the theory of learning and communication using D3.js and canvas.',
             img_url: "img/Projects/PGMCreator/1.png",
-            haveGallery: false,
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/PGMCreator/2.png",
+                }],
             year: "Dec, 2015",
-            haveProject: fal?≥kmjncfdxse,
+            haveProject: false,
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
