@@ -67,7 +67,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             img_url: "img/Projects/PGMCreator/1.png",
             haveGallery: false,
             year: "Dec, 2015",
-            haveProject: false,
+            haveProject: fal?≥kmjncfdxse,
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
