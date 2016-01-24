@@ -135,12 +135,11 @@
                     <ul class="list-group">
                         <li class="list-group-item shadow">
 
-                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
                             <span class="badge">{{art.year}}</span>
 
-                            <button ng-if="art.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{art.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
+                            <button ng-if="art.haveProject == true" type="button" class="btn-padding btn btn-default pull-right"><a href="{{art.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
 
-                            <button ng-if="art.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{art.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
+                            <button ng-if="art.haveGithub == true" type="button" class="btn-padding btn btn-default pull-right"><a href="{{art.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
 
                         </li>
 

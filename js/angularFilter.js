@@ -68,6 +68,8 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGallery: true,
             gallery: [
                 {
+                    url: "img/Projects/PGMCreator/3.png",
+                }, {
                     url: "img/Projects/PGMCreator/2.png",
                 }],
             year: "Dec, 2015",

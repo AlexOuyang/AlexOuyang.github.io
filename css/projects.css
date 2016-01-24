@@ -103,11 +103,15 @@
 
 .list-group-item>.badge {
     float: inherit;
-    margin-left: 5px;
+    margin-left: -5px;
 }
 
 
 /* Override default setting to achieve no button outline */
+
+.btn-padding {
+    padding: 0px 3px; 
+}
 
 .btn:focus,
 .btn:active:focus,

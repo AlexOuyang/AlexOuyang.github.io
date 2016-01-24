@@ -132,13 +132,11 @@
                 <article class="project" ng-repeat="project in main.projects | filter:main.searchInput">
                     <ul class="list-group">
                         <li class="list-group-item shadow">
-
-                            <button type="button" class="btn btn-default " title="like"><span class="glyphicon glyphicon-fullscreen"></span></button>
                             <span class="badge">{{project.year}}</span>
 
-                            <button ng-if="project.haveProject == true" type="button" class="btn btn-default pull-right"><a href="{{project.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
+                            <button ng-if="project.haveProject == true" type="button" class="btn-padding btn btn-default pull-right"><a href="{{project.view_project_url}}"><i class="fa fa-arrow-right"></i><span class="media-heading"> View </span></a></button>
 
-                            <button ng-if="project.haveGithub == true" type="button" class="btn btn-default pull-right"><a href="{{project.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
+                            <button ng-if="project.haveGithub == true" type="button" class="btn-padding btn btn-default pull-right"><a href="{{project.github_url}}"><i class="fa fa-github-alt"></i><span class="media-heading"> GitHub</span></a></button>
 
                         </li>
 
