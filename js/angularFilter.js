@@ -13,7 +13,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
 
     // These are my machine learning projects
     vm.machineLearning = [
-        {            
+        {
             title: 'Graphical Model Creator (In Progress)',
             tags: 'Javascript, Front-end, Web',
             description: 'A framework for creating models and diagrams for visualizing the theory of learning and communication using D3.js and canvas.',
@@ -70,13 +70,13 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/RealTimeFaceRecognition",
-        }, {            
+        }, {
             title: 'EEG Signal Analysis and Frequency Modulation',
             tags: 'Signal Analysis, Python',
             description: 'Examing the effect of brain alpha wave frequency modulation on memory and attention',
             img_url: "img/Research/fmbci/1.png",
             haveGallery: false,
-            year: "Dec, 2015",
+            year: "Sept, 2015",
             haveProject: false,
             view_project_url: "",
             haveGithub: false,
