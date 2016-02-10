@@ -347,7 +347,7 @@ a:active {
 /*=========  Machine Learning Page Headers Including Background Image ===========*/
 
 #ml-background {
-    background: url("../img/MachineLearning/mlHeaderImageDarker.png") repeat top center fixed;
+    background: url("../img/Research/mlHeaderImageDarker.png") repeat top center fixed;
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
     background-size: 100% auto;

@@ -13,55 +13,8 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
 
     // These are my machine learning projects
     vm.machineLearning = [
-        {
-            title: 'Handwriting Digit Segmentation and Recognition',
-            tags: 'Machine Learning, Python, Theano, OpenCV',
-            description: 'Digit classification using multilayer perceptron trained on MNIST dataset build in Theano, and digit segmentation using edge detection, adaptive thresholding and other image filtering methods from openCV and tested on the Street View House Number Dataset written in Python.',
-            img_url: "img/MachineLearning/digitRecognition/1.png",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img/MachineLearning/digitRecognition/2.png",
-                }, {
-                    url: "img/MachineLearning/digitRecognition/3.png",
-                }, {
-                    url: "img/MachineLearning/digitRecognition/4.png",
-                }],
-            year: "Sept, 2015",
-            haveProject: false,
-            view_project_url: "",
-            haveGithub: true,
-            github_url: "https://github.com/AlexOuyang/OCR",
-        }, {
-            title: 'Real Time Face Detection and Recognition',
-            tags: 'Machine Learning, Python, Theano, OpenCV',
-            description: 'Achieved real time face tracking in OpenCV and optimized haarcascade for up to 45 degrees of rotation vavriancy. Built SVM classification model for face recognition in python from the top 150 eigenvectors of the 2452 training samples in the Extended Yale Face Dataset B extracted using PCA. An accuracy of 93.3% is obtained with the Radial Basis Function kernel on the set of 613 testing samples.',
-            img_url: "img/MachineLearning/faceRecognition/face_sad.png",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img/MachineLearning/faceRecognition/face_side.png",
-                }, {
-                    url: "img/MachineLearning/faceRecognition/face_left.png",
-                }, {
-                    url: "img/MachineLearning/faceRecognition/face_eigen.png",
-                }, {
-                    url: "img/MachineLearning/faceRecognition/face_predict.png",
-                }],
-            year: "Oct, 2014",
-            haveProject: false,
-            view_project_url: "",
-            haveGithub: true,
-            github_url: "https://github.com/AlexOuyang/RealTimeFaceRecognition",
-        }];
-
-
-
-
-    // These are my other projects
-    vm.projects = [
-        {
-            title: 'Probabilistic Graphical Model Creator (In Progress)',
+        {            
+            title: 'Graphical Model Creator (In Progress)',
             tags: 'Javascript, Front-end, Web',
             description: 'A framework for creating models and diagrams for visualizing the theory of learning and communication using D3.js and canvas.',
             img_url: "img/Projects/PGMCreator/1.png",
@@ -77,6 +30,100 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
+        }, {
+            title: 'Handwriting Digit Segmentation and Recognition',
+            tags: 'Machine Learning, Python, Theano, OpenCV',
+            description: 'Digit classification using multilayer perceptron trained on MNIST dataset build in Theano, and digit segmentation using edge detection, adaptive thresholding and other image filtering methods from openCV and tested on the Street View House Number Dataset written in Python.',
+            img_url: "img/Research/digitRecognition/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Research/digitRecognition/2.png",
+                }, {
+                    url: "img/Research/digitRecognition/3.png",
+                }, {
+                    url: "img/Research/digitRecognition/4.png",
+                }],
+            year: "Sept, 2015",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/OCR",
+        }, {
+            title: 'Real Time Face Detection and Recognition',
+            tags: 'Machine Learning, Python, Theano, OpenCV',
+            description: 'Achieved real time face tracking in OpenCV and optimized haarcascade for up to 45 degrees of rotation vavriancy. Built SVM classification model for face recognition in python from the top 150 eigenvectors of the 2452 training samples in the Extended Yale Face Dataset B extracted using PCA. An accuracy of 93.3% is obtained with the Radial Basis Function kernel on the set of 613 testing samples.',
+            img_url: "img/Research/faceRecognition/face_sad.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Research/faceRecognition/face_side.png",
+                }, {
+                    url: "img/Research/faceRecognition/face_left.png",
+                }, {
+                    url: "img/Research/faceRecognition/face_eigen.png",
+                }, {
+                    url: "img/Research/faceRecognition/face_predict.png",
+                }],
+            year: "Oct, 2014",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/RealTimeFaceRecognition",
+        }, {            
+            title: 'EEG Signal Analysis and Frequency Modulation',
+            tags: 'Signal Analysis, Python',
+            description: 'Examing the effect of brain alpha wave frequency modulation on memory and attention',
+            img_url: "img/Research/fmbci/1.png",
+            haveGallery: false,
+            year: "Dec, 2015",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: false,
+            github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
+        }];
+
+
+
+
+    // These are my other projects
+    vm.projects = [
+        {
+            title: 'myCalender',
+            tags: 'Android, UI Design',
+            description: 'myCalender is an android calender app used for students to keep track of classes and events. It allows user to keep track of static and dynamic (periodic) events.',
+            img_url: "img/Projects/myCalender/1.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/myCalender/1.png",
+                }, {
+                    url: "img/Projects/myCalender/2.png",
+                }],
+            year: "Feb, 2016",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: true,
+            github_url: "https://github.com/ucsdCSE110wi16/CSE110W240T9",
+        }, {
+            title: "Kristine's Website",
+            tags: 'Javascript, Front-end, Web',
+            description: 'A website helped to create for a friend based on a HTML5Up template',
+            img_url: "img/Projects/kristineWebsite/2.jpg",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/kristineWebsite/1.jpg",
+                }, {
+                    url: "img/Projects/kristineWebsite/3.jpg",
+                }, {
+                    url: "img/Projects/kristineWebsite/4.jpg",
+                }],
+            year: "Jan, 2016",
+            haveProject: true,
+            view_project_url: "http://kristinetran14.github.io/",
+            haveGithub: false,
+            github_url: "",
         }, {
             title: 'My Website V2.0',
             tags: 'Web Development, Front-end',
