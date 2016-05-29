@@ -14,20 +14,53 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my machine learning projects
     vm.machineLearning = [
         {
+            title: 'Dynamic Vision Sensor Fall Risk Assessment (In Progress)',
+            tags: 'Research, Machine Vision',
+            description: 'Working on data collection and algorithm development in a fall risk assessment study that employs Dynamic Vision Sensor cameras to capture pixel-level illumination changes asynchronously in the presence of motion. Using various machine vision algorithms in Matlab to record and analyze SPPB tests (including gate speed test, balance test, and chair stand test) in a controlled study.',
+            img_url: "img/Research/dvs/dvs1.png",
+            haveGallery: false,
+            gallery: [
+                {
+                    url: "img/Research/PGMCreator/pgm_0.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_1.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_2.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_3.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_4.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_5.png",
+                }],
+            year: "March, 2016",
+            haveProject: false,
+            view_project_url: "http://alexouyang.github.io/GraphicModelCreator/documentation/tutorial-interactiveExamples.html",
+            haveGithub: false,
+            github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
+        }, {
             title: 'Graphical Model Creator (In Progress)',
             tags: 'Javascript, Front-end, Web',
-            description: 'A framework for creating models and diagrams for visualizing the theory of learning and communication using D3.js and canvas.',
-            img_url: "img/Projects/PGMCreator/1.png",
+            description: 'Used Javascript (ES6) and D3.js to create an infographic API library for creating interactive probability graphical models in aid of visualizing the theory of communication, with documentation and examples included. Examined the various aspects of infographics and practiced iterative design on a weekly basis.',
+            img_url: "img/Research/PGMCreator/pgm_6.png",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Projects/PGMCreator/3.png",
+                    url: "img/Research/PGMCreator/pgm_0.png",
                 }, {
-                    url: "img/Projects/PGMCreator/2.png",
+                    url: "img/Research/PGMCreator/pgm_1.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_2.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_3.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_4.png",
+                }, {
+                    url: "img/Research/PGMCreator/pgm_5.png",
                 }],
             year: "Dec, 2015",
-            haveProject: false,
-            view_project_url: "",
+            haveProject: true,
+            view_project_url: "http://alexouyang.github.io/GraphicModelCreator/documentation/tutorial-interactiveExamples.html",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
         }, {
@@ -73,7 +106,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: 'EEG Signal Analysis and Frequency Modulation',
             tags: 'Signal Analysis, Python',
-            description: 'Examing the effect of brain alpha wave frequency modulation on memory and attention',
+            description: 'Created a EEG frequency modulation toolbox for analyzing EEG oscillatory dynamics in Python. Implemented signal processing methods such as FFT, running median filters and various spectral estimation methods for analyzing peak alpha frequency and simulated brain alpha oscillations. Examined the effect of alpha brain wave in behavioral level performance on memory and attention tasks using BCI neurofeedback. ',
             img_url: "img/Research/fmbci/1.png",
             haveGallery: false,
             year: "Sept, 2015",
@@ -89,16 +122,44 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my other projects
     vm.projects = [
         {
-            title: 'myCalender',
-            tags: 'Android, UI Design',
-            description: 'myCalender is an android calender app used for students to keep track of classes and events. It allows user to keep track of static and dynamic (periodic) events.',
-            img_url: "img/Projects/myCalender/1.png",
+            title: 'Calendar+',
+            tags: 'Android, Material UI, Backend',
+            description: 'Calendar+ is an android calendar app designed for students! It is a smart calendar app used for students to keep track of classes and events via a dynamically scheduling algorithm that prioritizes events based on event types and user preference.',
+            img_url: "img/Projects/calendarPlus/material_1.png",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img/Projects/myCalender/1.png",
+                    url: "img/Projects/calendarPlus/1.png",
                 }, {
-                    url: "img/Projects/myCalender/2.png",
+                    url: "img/Projects/calendarPlus/2.png",
+                }, {
+                    url: "img/Projects/calendarPlus/3.png",
+                }, {
+                    url: "img/Projects/calendarPlus/4.png",
+                }, {
+                    url: "img/Projects/calendarPlus/5.png",
+                }, {
+                    url: "img/Projects/calendarPlus/6.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/7.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/8.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/9.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/10.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/11.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/12.jpg",
+                }, {
+                    url: "img/Projects/calendarPlus/13.png",
+                }, {
+                    url: "img/Projects/calendarPlus/14.png",
+                }, {
+                    url: "img/Projects/calendarPlus/15.png",
+                }, {
+                    url: "img/Projects/calendarPlus/16.png",
                 }],
             year: "Feb, 2016",
             haveProject: false,
@@ -106,25 +167,25 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: true,
             github_url: "https://github.com/ucsdCSE110wi16/CSE110W240T9",
         }, {
-            title: "Kristine's Website",
-            tags: 'Javascript, Front-end, Web',
-            description: 'A website helped to create for a friend based on a HTML5Up template',
-            img_url: "img/Projects/kristineWebsite/2.jpg",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img/Projects/kristineWebsite/1.jpg",
-                }, {
-                    url: "img/Projects/kristineWebsite/3.jpg",
-                }, {
-                    url: "img/Projects/kristineWebsite/4.jpg",
-                }],
-            year: "Jan, 2016",
-            haveProject: true,
-            view_project_url: "http://kristinetran14.github.io/",
-            haveGithub: false,
-            github_url: "",
-        }, {
+        //     title: "Kristine's Website",
+        //     tags: 'Javascript, Front-end, Web',
+        //     description: 'A website helped to create for a friend based on a HTML5Up template',
+        //     img_url: "img/Projects/kristineWebsite/2.jpg",
+        //     haveGallery: true,
+        //     gallery: [
+        //         {
+        //             url: "img/Projects/kristineWebsite/1.jpg",
+        //         }, {
+        //             url: "img/Projects/kristineWebsite/3.jpg",
+        //         }, {
+        //             url: "img/Projects/kristineWebsite/4.jpg",
+        //         }],
+        //     year: "Jan, 2016",
+        //     haveProject: true,
+        //     view_project_url: "http://kristinetran14.github.io/",
+        //     haveGithub: false,
+        //     github_url: "",
+        // }, {
             title: 'My Website V2.0',
             tags: 'Web Development, Front-end',
             description: 'This is the website you are looking at.',
@@ -194,6 +255,21 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/3DGrapher",
         }, {
+            title: 'Dictionary Autocomplete Application',
+            tags: 'C++, Data Structure',
+            description: 'Implement an efficient auto-complete program in C++ that works on a dictionary to find the k most frequently occurring completions of a given prefix. The dictionary is implemented as a multiway trie data structure. Since the C++ STL offers other ways of storing a dictionary such as ordered set..etc, I also wrote benchmarking code to compare the performance of my dictionary with those provided by the C++ STL.',
+            img_url: "img/Projects/autocomplete/2.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Projects/autocomplete/2.png",
+                }],
+            year: "Feb, 2016",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: false,
+            // github_url: "https://github.com/AlexOuyang/3DGrapher",
+        }, {
             title: 'Personal Website V0.1',
             tags: 'Front-end, Web',
             description: 'My first personal website.',
@@ -218,9 +294,9 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             year: "Jun, 2015",
 
         }, {
-            title: 'MorningSignOut (Internship)',
+            title: 'MorningSignOut',
             tags: 'Hackathon, Front-end, Web',
-            description: 'Created an android app that allows MorningSignOut readers to access website articles via mobile devices. Designed test procedures, performed functional testings on code, documented source code and fixed bugs. Maintained the development and the structure of the MorningSignOut website.',
+            description: 'Created an android app for my intership at MorningSignOut that allows readers to access website articles via mobile devices. Designed test procedures, performed functional testings on code, documented source code and fixed bugs.',
             img_url: "img/Projects/mso/1.jpg",
             year: "Feb, 2015",
             haveProject: false,
@@ -280,17 +356,27 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: '❦ Image Slider Of Love',
             tags: 'Web, Front-end, HTML5',
-            description: 'Something Made for a friend with Love ❤❤❤',
+            description: 'A postcard like photo album with Love ❤❤❤',
             img_url: "img/WebArt/sliderOfLove/ImageSliderOfLove.png",
             year: "Jan, 2013",
             haveProject: true,
-            view_project_url: "https://www.youtube.com/watch?v=LhcHsVe4xXc",
+            view_project_url: "http://codepen.io/AlexO/full/jKEqG/",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/CanvasAnimations/tree/master/LeapMotion%20Minimalist%20Pattern%20Trials",
         }, {
+            title: 'The Universe Animation',
+            tags: 'Web, Front-end, HTML5',
+            description: 'My interpretation of time and space in the form of canvas animation',
+            img_url: "img/WebArt/theUniverse/theUniverse2.png",
+            year: "Jan, 2013",
+            haveProject: true,
+            view_project_url: "http://codepen.io/AlexO/full/etBqa/",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/TheUniverseCanvasAnimation",
+        }, {
             title: 'Remaint Game Studio',
             tags: 'Front-end, HTML5, Web Design',
-            description: 'A joke game studio I founded with a friend of mine in high school to make games for fun.',
+            description: 'A game collaborate I started with a friend of mine in high school for fun.',
             img_url: "img/Projects/remaint/1.png",
             haveGallery: true,
             gallery: [
@@ -312,6 +398,56 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my game projects
     vm.games = [
         {
+            title: 'AtomAR (Coming on GooglePlay soon)',
+            tags: 'Education, OpenGL, Android, Augmented Reality',
+            description: 'Augmented reality chemistry game to make education more fun.',
+            img_url: "img/Games/atomAR/atomAR_icon2.png",
+            haveGallery: false,
+            gallery: [
+                {
+                    url: "img/Games/parallelWorld/1.png",
+                }, {
+                    url: "img/Games/parallelWorld/2.png",
+                }, {
+                    url: "img/Games/parallelWorld/3.png",
+                }, {
+                    url: "img/Games/parallelWorld/5.png",
+                }, {
+                    url: "img/Games/parallelWorld/6.png",
+                }, {
+                    url: "img/Games/parallelWorld/7.png",
+                }],
+            year: "May, 2016",
+            haveProject: true,
+            view_project_url: "https://medium.com/@snyoonoh/created-by-alex-ouyang-seung-yoon-oh-dede5c7ac70a#.bcnfrcnyp",
+            haveGithub: false,
+            // github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
+        }, {
+            title: 'Parallel World (Coming on GooglePlay soon)',
+            tags: 'Game, PC, Mobile, Unity3D',
+            description: 'To become whole again.',
+            img_url: "img/Games/parallelWorld/4.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Games/parallelWorld/icon_2.png",
+                }, {
+                    url: "img/Games/parallelWorld/2.png",
+                }, {
+                    url: "img/Games/parallelWorld/3.png",
+                }, {
+                    url: "img/Games/parallelWorld/5.png",
+                }, {
+                    url: "img/Games/parallelWorld/6.png",
+                }, {
+                    url: "img/Games/parallelWorld/7.png",
+                }],
+            year: "April, 2016",
+            haveProject: false,
+            // view_project_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
+            haveGithub: false,
+            // github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
+        }, {
             title: 'Powerful Poptart (In Progress)',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vindictive hamster boss. Designed and implemented in game puzzle, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
@@ -319,6 +455,8 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGallery: true,
             gallery: [
                 {
+                    url: "img/Games/powerfulPoptart/powerfulPoptartLogo.png",
+                }, {
                     url: "img/Games/powerfulPoptart/1.png",
                 }, {
                     url: "img/Games/powerfulPoptart/2.png",
@@ -469,12 +607,24 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
 
     vm.artWorks = [
         {
+            title: 'Pixel Girl',
+            tags: 'Pixel Art, Design',
+            description: 'Pixel Girl artWorks',
+            img_url: "img/Art/pixelGirl/pixelGirl3.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Art/pixelGirl/pixelGirl1.png",
+                }, {
+                    url: "img/Art/pixelGirl/pixelGirl2.png",
+                }],
+            year: 2016,
+        }, {
             title: 'Pixel Me Ideling 2',
             tags: 'GameArt, PixelArt',
             description: "The pixel me",
             img_url: "img/Art/pixelMe/me2.png",
             year: 2015,
-
         }, {
             title: 'Pixel Me Jumping',
             tags: 'GameArt, PixelArt',
@@ -482,7 +632,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             img_url: "img/Art/pixelMe/me.png",
             year: 2015,
 
-    }, {
+        }, {
             title: 'Tron Model - steelBlue',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
@@ -497,7 +647,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Art/tronBlue/4.jpg",
                 }],
             year: 2014,
-    }, {
+        }, {
             title: 'Tron Model - red',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
@@ -511,7 +661,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }],
             year: 2014,
 
-    }, {
+        }, {
             title: '❣ Meca Model - Gabrille',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
@@ -531,7 +681,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }],
             year: 2014,
 
-    }, {
+        }, {
             title: '❣ Meca Model - 04',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender inspired by Evangelion',
@@ -548,7 +698,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Art/04/5.jpg",
                 }],
             year: 2013,
-    }, {
+        }, {
             title: '❣ Meca Model - death',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
@@ -567,7 +717,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Art/death/6.jpg",
                 }],
             year: 2013,
-    }, {
+        }, {
             title: '❣ Meca Model - Blue Elf',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
@@ -586,7 +736,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img/Art/blueElf/6.jpg",
                 }],
             year: 2013,
-    }, {
+        }, {
             title: '❣ Meca Model - Pantacle',
             tags: 'Art, 3D Modeling, Blender',
             description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
