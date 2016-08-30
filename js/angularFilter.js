@@ -19,20 +19,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             description: 'Working on data collection and algorithm development in a fall risk assessment study that employs Dynamic Vision Sensor cameras to capture pixel-level illumination changes asynchronously in the presence of motion. Using various machine vision algorithms in Matlab to record and analyze SPPB tests (including gate speed test, balance test, and chair stand test) in a controlled study.',
             img_url: "img/Research/dvs/dvs1.png",
             haveGallery: false,
-            gallery: [
-                {
-                    url: "img/Research/PGMCreator/pgm_0.png",
-                }, {
-                    url: "img/Research/PGMCreator/pgm_1.png",
-                }, {
-                    url: "img/Research/PGMCreator/pgm_2.png",
-                }, {
-                    url: "img/Research/PGMCreator/pgm_3.png",
-                }, {
-                    url: "img/Research/PGMCreator/pgm_4.png",
-                }, {
-                    url: "img/Research/PGMCreator/pgm_5.png",
-                }],
+            gallery: [],
             year: "March, 2016",
             haveProject: false,
             view_project_url: "http://alexouyang.github.io/GraphicModelCreator/documentation/tutorial-interactiveExamples.html",
@@ -422,6 +409,23 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "https://medium.com/@snyoonoh/created-by-alex-ouyang-seung-yoon-oh-dede5c7ac70a#.bcnfrcnyp",
             haveGithub: false,
             // github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
+        }, {
+            title: 'Galatic Dragon',
+            tags: 'OpenGL, GLFW, GLEW, GLSL',
+            description: 'C++ game made from scratch.',
+            img_url: "img/Games/galaticDragon/youtube.png",
+            haveGallery: true,
+            gallery: [
+                {
+                    url: "img/Games/galaticDragon/2.png",
+                }, {
+                    url: "img/Games/galaticDragon/1.png",
+                }],
+            year: "May, 2016",
+            haveProject: true,
+            view_project_url: "https://www.youtube.com/watch?v=1vc1sbcdWMo",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/GalaticDragonGame",
         }, {
             title: 'Parallel World (Coming on GooglePlay soon)',
             tags: 'Game, PC, Mobile, Unity3D',
