@@ -380,11 +380,11 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Computer Graphics Projects',
             tags: 'OpenGL',
             description: 'Scene Graph Engine, Collision Detection, Cell Shading, Phong Shading, SSAO, Fog Effect, Audio Effects, Text Rendering, Animations.',
-            img_url: "img_compressed/Games/computerGraphics/ssao-min.png",
+            img_url: "img_compressed/Games/computerGraphics/environmentalMapping-min.jpeg",
             haveGallery: true,
             gallery: [
                 {
-                    url: "img_compressed/Games/computerGraphics/environmentalMapping-min.jpeg",
+                    url: "img_compressed/Games/computerGraphics/ssao-min.png",
                 }, {
                     url: "img_compressed/Games/computerGraphics/bezier1-min.png",
                 }, {
