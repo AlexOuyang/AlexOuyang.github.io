@@ -1,4 +1,4 @@
-var myDescription = "I am a student at UCSD who enjoys game development (@nextlevelgamestudio.com) and Front-end technologies. My goal is to live an examined life. I am deeply puzzled by the complexity of life and the universe, and I wish to know more about them. I like to read books related to philosophy and psychology in my spare time. Learning is what keeps me alive!";
+var myDescription = "I am a student at UCSD who enjoys game development, computer graphics, machine learning and front-end technologies. I like to read about philosophy and psychology in my spare time. Learning is what keeps me alive!";
 
 var textArray = myDescription.split("");
 var loopTimer;
