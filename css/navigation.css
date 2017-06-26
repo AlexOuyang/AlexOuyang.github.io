@@ -35,9 +35,9 @@
 
 /*======= color of navibar =====*/
 .navbar-inverse {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: rgba(0, 0, 0, 0.4);
-    border-bottom: rgba(0, 0, 0, 0.4) 0px solid;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+    border-bottom: rgba(0, 0, 0, 0.6) 0px solid;
     /*    max-height: 50px;*/
 }
 
