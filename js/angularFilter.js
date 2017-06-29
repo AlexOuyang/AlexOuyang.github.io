@@ -366,22 +366,40 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my game projects
     vm.games = [
         {
-            title: 'AtomAR (Coming on GooglePlay soon)',
-            tags: 'Education, OpenGL, Android, Augmented Reality',
-            description: 'Augmented reality chemistry game to make education more fun.',
-            img_url: "img_compressed/Games/atomAR/atomAR_icon2-min.png",
+            title: 'Parallel World (Available on GooglePlay)',
+            tags: 'Game, PC, Mobile, Unity3D, C#',
+            description: 'Parallel World is a death-defying, rage-inducing and brain-picking minimalistic puzzle platformer that tests your skills and reflexes as you simultaneously control two squares through interesting platform challenges and puzzles.',
+            img_url: "img_compressed/Games/parallelWorld/parallelWorld_1.png",
             haveGallery: false,
             gallery: [],
-            year: "June, 2016",
+            year: "Sept, 2016",
             haveProject: true,
-            view_project_url: "https://medium.com/@snyoonoh/created-by-alex-ouyang-seung-yoon-oh-dede5c7ac70a#.bcnfrcnyp",
+            view_project_url: "https://play.google.com/store/apps/details?id=com.nxtlvl.parallel",
             haveGithub: false,
+            github_url: "",
+        }, {
+            title: 'Galatic Dragon',
+            tags: 'OpenGL, GLSL, C++',
+            description: 'An infinite runner game made in OpenGL. I implemented the core game play mechanicsm, AABB bounding box, phong shading and cell shading',
+            img_url: "img_compressed/Games/galaticDragon/youtube-min.png",
+            haveGallery: false,
+            gallery: [
+                {
+                    url: "img_compressed/Games/galaticDragon/2-min.png",
+                }, {
+                    url: "img_compressed/Games/galaticDragon/1-min.png",
+                }],
+            year: "May, 2016",
+            haveProject: true,
+            view_project_url: "https://www.youtube.com/watch?v=1vc1sbcdWMo",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/GalaticDragonGame",
         }, {
             title: 'Computer Graphics Projects',
-            tags: 'OpenGL',
-            description: 'Scene Graph Engine, Collision Detection, Cell Shading, Phong Shading, SSAO, Fog Effect, Audio Effects, Text Rendering, Animations.',
+            tags: 'OpenGL, GLSL, C++',
+            description: 'Scene Graph Engine, Bezier Curve, Collision Detection, Cell Shading, Phong Shading, SSAO, Fog Effect, Audio Effects, Text Rendering, Animations.',
             img_url: "img_compressed/Games/computerGraphics/environmentalMapping-min.jpeg",
-            haveGallery: true,
+            haveGallery: false,
             gallery: [
                 {
                     url: "img_compressed/Games/computerGraphics/ssao-min.png",
@@ -398,53 +416,22 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: false,
             github_url: "https://github.com/AlexOuyang/GalaticDragonGame",
         }, {
-            title: 'Galatic Dragon',
-            tags: 'OpenGL, GLFW, GLEW, GLSL',
-            description: 'C++ game made from scratch.',
-            img_url: "img_compressed/Games/galaticDragon/youtube-min.png",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img_compressed/Games/galaticDragon/2-min.png",
-                }, {
-                    url: "img_compressed/Games/galaticDragon/1-min.png",
-                }],
-            year: "May, 2016",
-            haveProject: true,
-            view_project_url: "https://www.youtube.com/watch?v=1vc1sbcdWMo",
-            haveGithub: true,
-            github_url: "https://github.com/AlexOuyang/GalaticDragonGame",
-        }, {
-            title: 'Parallel World (Coming on GooglePlay soon)',
-            tags: 'Game, PC, Mobile, Unity3D',
-            description: 'To become whole again.',
-            img_url: "img_compressed/Games/parallelWorld/combined-min.png",
+            title: 'AtomAR',
+            tags: 'Android, Augmented Reality, Unity3d, Vuforia',
+            description: 'An augmented reality chemistry game that helps students to learn chemistry.',
+            img_url: "img_compressed/Games/atomAR/atomAR_icon2-min.png",
             haveGallery: false,
-            gallery: [
-                {
-                    url: "img_compressed/Games/parallelWorld/4.png",
-                }, {
-                    url: "img_compressed/Games/parallelWorld/2.png",
-                }, {
-                    url: "img_compressed/Games/parallelWorld/3.png",
-                }, {
-                    url: "img_compressed/Games/parallelWorld/5.png",
-                }, {
-                    url: "img_compressed/Games/parallelWorld/6.png",
-                }, {
-                    url: "img_compressed/Games/parallelWorld/7.png",
-                }],
-            year: "April, 2016",
-            haveProject: false,
-            // view_project_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
+            gallery: [],
+            year: "January, 2016",
+            haveProject: true,
+            view_project_url: "https://medium.com/@snyoonoh/created-by-alex-ouyang-seung-yoon-oh-dede5c7ac70a#.bcnfrcnyp",
             haveGithub: false,
-            // github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
         }, {
-            title: 'Powerful Poptart (In Progress)',
+            title: 'Powerful Poptart (In Development)',
             tags: 'Game, PC, Mobile, Unity3D',
-            description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vindictive hamster boss. Designed and implemented in game puzzle, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
+            description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vindictive hamster boss. I handled all the programming and some of the level design. I implemented in game puzzles, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
             img_url: "img_compressed/Games/powerfulPoptart/7-min.png",
-            haveGallery: true,
+            haveGallery: false,
             gallery: [
                 {
                     url: "img_compressed/Games/powerfulPoptart/powerfulPoptart-min.png",
@@ -467,7 +454,22 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: false,
             github_url: "",
         }, {
-            title: 'Reversal (Web Game Made For JS13K Hackathon)',
+            title: 'Insatiable Spider (Available on Google Play)',
+            tags: 'Game, PC, Mobile, Unity3D',
+            description: 'You are one BIG-ASS SPIDER with an INSATIABLE hunger!! Eat as much and as fast as you can in this arcade shooter. Earn points by eating and watch as your power grows!',
+            img_url: "img_compressed/Games/insatiableSpider/1-min.png",
+            haveGallery: false,
+            gallery: [
+                {
+                    url: "img_compressed/Games/insatiableSpider/0-min.png",
+                }],
+            year: "August, 2015",
+            haveProject: true,
+            view_project_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
+            haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
+        }, {
+            title: 'Reversal (JS13K Hackathon)',
             tags: 'Game, Web, HTML5, Javascript',
             description: 'Traversal is a game that allows you to teleport while gaining higher jumping velocity, teleportation is an important part of the game. It is a 2D side scroller html5 game created from scratch using pure Javascript. I also implemented features including code generated environmental art, Newtonian physics, fluid simulations and tile map generation.',
             img_url: "img_compressed/Games/reversal/1-min.png",
@@ -478,22 +480,19 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "http://js13kgames.com/entries/reversal",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/REVERSAL-game",
-    }, {
-            title: 'Insatiable Spider (Available on Google Play)',
+        }, {
+            title: 'Forest Runner',
             tags: 'Game, PC, Mobile, Unity3D',
-            description: 'You are one BIG-ASS SPIDER with an INSATIABLE hunger!! Eat as much and as fast as you can in this arcade shooter. Earn points by eating and watch as your power grows!',
-            img_url: "img_compressed/Games/insatiableSpider/1-min.png",
-            haveGallery: true,
-            gallery: [
-                {
-                    url: "img_compressed/Games/insatiableSpider/0-min.png",
-                }],
-            year: "Jul, 2015",
-            haveProject: true,
-            view_project_url: "https://play.google.com/store/apps/details?id=com.NXTLVL.INSATIABLE_SPIDER",
-            haveGithub: true,
-            github_url: "https://github.com/AlexOuyang/Insatiable-Spider",
-    }, {
+            description: 'An infinite runner game that details the story of a lone wolf running wild in the forst. Unfortunately this game was abundonded half way.',
+            img_url: "img_compressed/Games/forestRunner/1-min.png",
+            haveGallery: false,
+            gallery: [],
+            year: "Feb, 2015",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: false,
+            github_url: "",
+        }, {
             title: 'Into The Light',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'The story of a lost soul in the world of darkness tries to illuminate the world by collecting star dusts. I designed and implemented reverse gravity physics and teleportation mechanisms which allows players to teleport while retaining velocity.',
@@ -501,16 +500,16 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGallery: false,
             gallery: [],
             year: "Apr, 2015",
-            haveProject: true,
+            haveProject: false,
             view_project_url: "http://nxtlvl.itch.io/into-the-light",
             haveGithub: false,
             github_url: "",
-    }, {
+        }, {
             title: 'Lost World',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'The story of boy lost in the world of memories, he tries to collect stars in order to find way home.',
             img_url: "img_compressed/Games/lostWorld/3-min.png",
-            haveGallery: true,
+            haveGallery: false,
             gallery: [
                 {
                     url: "img_compressed/Games/lostWorld/1-min.png",
@@ -522,25 +521,13 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "https://www.youtube.com/watch?v=jFnByirxdkc",
             haveGithub: false,
             github_url: "",
-    }, {
-            title: 'Forest Runner',
-            tags: 'Game, PC, Mobile, Unity3D',
-            description: 'An infinite runner game that details the story of a lone wolf running wild in the forst. Unfortunately this game was abundonded half way.',
-            img_url: "img_compressed/Games/forestRunner/1-min.png",
-            haveGallery: false,
-            gallery: [],
-            year: "Feb, 2014",
-            haveProject: false,
-            view_project_url: "",
-            haveGithub: false,
-            github_url: "",
-    }, {
+        }, {
             title: 'Maze Runner',
             tags: 'Puzzld Game, PC, Mobile, Unity3D',
             description: 'Player switches between first person and third person to solve maze puzzles',
             img_url: "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10616309_767037970035866_2224106353375435192_n.jpg?oh=bee4962b972bda93d5d34b11ff44e879&oe=5635662E",
             img_url: "img_compressed/Games/mazeRunner/1-min.jpg",
-            haveGallery: true,
+            haveGallery: false,
             gallery: [
                 {
                     url: "img_compressed/Games/mazeRunner/2-min.jpg",
@@ -552,7 +539,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "",
             haveGithub: false,
             github_url: "",
-    }];
+        }];
 
 
 
