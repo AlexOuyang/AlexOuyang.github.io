@@ -366,6 +366,18 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my game projects
     vm.games = [
         {
+            title: 'Recursive Raytracer',
+            tags: 'Computer Graphics, C++',
+            description: 'Implemented dielectric Fresnel material, absorption using Beer Lambert Law, environment mapping, Ashikhmin BRDF and attempted Cook Torrence BRDF.',
+            img_url: "img_compressed/Games/recursiveRaytracer/r1.jpg",
+            haveGallery: false,
+            gallery: [],
+            year: "June, 2017",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: false,
+            github_url: "",
+        }, {
             title: 'Parallel World (Available on GooglePlay)',
             tags: 'Game, PC, Mobile, Unity3D, C#',
             description: 'Parallel World is a death-defying, rage-inducing and brain-picking minimalistic puzzle platformer that tests your skills and reflexes as you simultaneously control two squares through interesting platform challenges and puzzles.',
