@@ -366,7 +366,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my game projects
     vm.games = [
         {
-            title: 'Recursive Raytracer',
+            title: 'Recursive Path Tracer',
             tags: 'Computer Graphics, C++',
             description: 'Implemented dielectric Fresnel material, absorption using Beer Lambert Law, environment mapping, Ashikhmin BRDF and attempted Cook Torrence BRDF.',
             img_url: "img_compressed/Games/recursiveRaytracer/r1.jpg",
@@ -442,11 +442,11 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             title: 'Powerful Poptart (In Development)',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'Our main protagonist, genetically modified hamster Poptart tries to save his abducted human family from the evil and vindictive hamster boss. I handled all the programming and some of the level design. I implemented in game puzzles, game physics, player power up system, storage system, particle effects, enemy AI, animation for scene transition and boss fights, as well as the touch controls for mobile devices.',
-            img_url: "img_compressed/Games/powerfulPoptart/7-min.png",
+            img_url: "img_compressed/Games/powerfulPoptart/pp_logo2.png",
             haveGallery: false,
             gallery: [
                 {
-                    url: "img_compressed/Games/powerfulPoptart/powerfulPoptart-min.png",
+                    url: "img_compressed/Games/powerfulPoptart/pp_logo.png",
                 }, {
                     url: "img_compressed/Games/powerfulPoptart/1-min.png",
                 }, {
@@ -505,18 +505,18 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: false,
             github_url: "",
         }, {
-            title: 'Into The Light',
-            tags: 'Game, PC, Mobile, Unity3D',
-            description: 'The story of a lost soul in the world of darkness tries to illuminate the world by collecting star dusts. I designed and implemented reverse gravity physics and teleportation mechanisms which allows players to teleport while retaining velocity.',
-            img_url: "img_compressed/Games/intoTheLight/0-min.png",
-            haveGallery: false,
-            gallery: [],
-            year: "Apr, 2015",
-            haveProject: false,
-            view_project_url: "http://nxtlvl.itch.io/into-the-light",
-            haveGithub: false,
-            github_url: "",
-        }, {
+        //     title: 'Into The Light',
+        //     tags: 'Game, PC, Mobile, Unity3D',
+        //     description: 'The story of a lost soul in the world of darkness tries to illuminate the world by collecting star dusts. I designed and implemented reverse gravity physics and teleportation mechanisms which allows players to teleport while retaining velocity.',
+        //     img_url: "img_compressed/Games/intoTheLight/0-min.png",
+        //     haveGallery: false,
+        //     gallery: [],
+        //     year: "Apr, 2015",
+        //     haveProject: false,
+        //     view_project_url: "http://nxtlvl.itch.io/into-the-light",
+        //     haveGithub: false,
+        //     github_url: "",
+        // }, {
             title: 'Lost World',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'The story of boy lost in the world of memories, he tries to collect stars in order to find way home.',
