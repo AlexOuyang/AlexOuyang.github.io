@@ -14,7 +14,19 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
     // These are my machine learning projects
     vm.machineLearning = [
         {
-            title: 'Dynamic Vision Sensor Fall Risk Assessment (In Progress)',
+            title: 'A Mixed Reality Training Tool',
+            tags: 'Research, Virtual Reality, Augmented Reality',
+            description: 'A mixed reality training tool for medical device such as wound vaccum. The trainer uses Virtual Reality technology via HTC Vive to communicate with the trainee who receives information in Augmented Reality using Microsoft HoloLens. The implementation is done in Unity3D.',
+            img_url: "img_compressed/Research/woundVac/hololens.jpg",
+            haveGallery: false,
+            gallery: [],
+            year: "Oct, 2016",
+            haveProject: false,
+            view_project_url: "https://medium.com/@snyoonoh/woundvac-ar-vr-30139dcb484c",
+            haveGithub: true,
+            github_url: "https://github.com/CalVR/woundvac_unity_VR",
+        }, {
+            title: 'Dynamic Vision Sensor Fall Risk Assessment',
             tags: 'Research, Machine Vision',
             description: 'Working on data collection and algorithm development in a fall risk assessment study that employs Dynamic Vision Sensor cameras to capture pixel-level illumination changes asynchronously in the presence of motion. Using various machine vision algorithms in Matlab to record and analyze SPPB tests (including gate speed test, balance test, and chair stand test) in a controlled study.',
             img_url: "img_compressed/Research/dvs/dvs1.png",
@@ -22,9 +34,9 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             gallery: [],
             year: "March, 2016",
             haveProject: false,
-            view_project_url: "http://alexouyang.github.io/GraphicModelCreator/documentation/tutorial-interactiveExamples.html",
+            view_project_url: "",
             haveGithub: false,
-            github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
+            github_url: "",
         }, {
             title: 'Graphical Model Creator (In Progress)',
             tags: 'Javascript, Front-end, Web',
@@ -46,9 +58,20 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                     url: "img_compressed/Research/PGMCreator/pgm_5.png",
                 }],
             year: "Dec, 2015",
-            haveProject: true,
+            haveProject: false,
             view_project_url: "http://alexouyang.github.io/GraphicModelCreator/documentation/tutorial-interactiveExamples.html",
             haveGithub: true,
+            github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
+        }, {
+            title: 'EEG Signal Analysis and Frequency Modulation',
+            tags: 'Signal Analysis, Python',
+            description: 'Created a EEG frequency modulation toolbox for analyzing EEG oscillatory dynamics in Python. Implemented signal processing methods such as FFT, running median filters and various spectral estimation methods for analyzing peak alpha frequency and simulated brain alpha oscillations. Examined the effect of alpha brain wave in behavioral level performance on memory and attention tasks using BCI neurofeedback. ',
+            img_url: "img_compressed/Research/fmbci/poster.png",
+            haveGallery: false,
+            year: "Dec, 2015",
+            haveProject: false,
+            view_project_url: "",
+            haveGithub: false,
             github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
         }, {
             title: 'Handwriting Digit Segmentation and Recognition',
@@ -74,7 +97,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             tags: 'Machine Learning, Python, Theano, OpenCV',
             description: 'Achieved real time face tracking in OpenCV and optimized haarcascade for up to 45 degrees of rotation vavriancy. Built SVM classification model for face recognition in python from the top 150 eigenvectors of the 2452 training samples in the Extended Yale Face Dataset B extracted using PCA. An accuracy of 93.3% is obtained with the Radial Basis Function kernel on the set of 613 testing samples.',
             img_url: "img_compressed/Research/faceRecognition/face_sad.png",
-            haveGallery: true,
+            haveGallery: false,
             gallery: [
                 {
                     url: "img_compressed/Research/faceRecognition/face_side.png",
@@ -90,17 +113,6 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "",
             haveGithub: true,
             github_url: "https://github.com/AlexOuyang/RealTimeFaceRecognition",
-        }, {
-            title: 'EEG Signal Analysis and Frequency Modulation',
-            tags: 'Signal Analysis, Python',
-            description: 'Created a EEG frequency modulation toolbox for analyzing EEG oscillatory dynamics in Python. Implemented signal processing methods such as FFT, running median filters and various spectral estimation methods for analyzing peak alpha frequency and simulated brain alpha oscillations. Examined the effect of alpha brain wave in behavioral level performance on memory and attention tasks using BCI neurofeedback. ',
-            img_url: "img_compressed/Research/fmbci/1.png",
-            haveGallery: false,
-            year: "Sept, 2015",
-            haveProject: false,
-            view_project_url: "",
-            haveGithub: false,
-            github_url: "https://github.com/AlexOuyang/GraphicModelCreator",
         }];
 
 
@@ -505,18 +517,18 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             haveGithub: false,
             github_url: "",
         }, {
-        //     title: 'Into The Light',
-        //     tags: 'Game, PC, Mobile, Unity3D',
-        //     description: 'The story of a lost soul in the world of darkness tries to illuminate the world by collecting star dusts. I designed and implemented reverse gravity physics and teleportation mechanisms which allows players to teleport while retaining velocity.',
-        //     img_url: "img_compressed/Games/intoTheLight/0-min.png",
-        //     haveGallery: false,
-        //     gallery: [],
-        //     year: "Apr, 2015",
-        //     haveProject: false,
-        //     view_project_url: "http://nxtlvl.itch.io/into-the-light",
-        //     haveGithub: false,
-        //     github_url: "",
-        // }, {
+            //     title: 'Into The Light',
+            //     tags: 'Game, PC, Mobile, Unity3D',
+            //     description: 'The story of a lost soul in the world of darkness tries to illuminate the world by collecting star dusts. I designed and implemented reverse gravity physics and teleportation mechanisms which allows players to teleport while retaining velocity.',
+            //     img_url: "img_compressed/Games/intoTheLight/0-min.png",
+            //     haveGallery: false,
+            //     gallery: [],
+            //     year: "Apr, 2015",
+            //     haveProject: false,
+            //     view_project_url: "http://nxtlvl.itch.io/into-the-light",
+            //     haveGithub: false,
+            //     github_url: "",
+            // }, {
             title: 'Lost World',
             tags: 'Game, PC, Mobile, Unity3D',
             description: 'The story of boy lost in the world of memories, he tries to collect stars in order to find way home.',
@@ -533,24 +545,24 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             view_project_url: "https://www.youtube.com/watch?v=jFnByirxdkc",
             haveGithub: false,
             github_url: "",
-        }, {
-            title: 'Maze Runner',
-            tags: 'Puzzld Game, PC, Mobile, Unity3D',
-            description: 'Player switches between first person and third person to solve maze puzzles',
-            img_url: "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10616309_767037970035866_2224106353375435192_n.jpg?oh=bee4962b972bda93d5d34b11ff44e879&oe=5635662E",
-            img_url: "img_compressed/Games/mazeRunner/1-min.jpg",
-            haveGallery: false,
-            gallery: [
-                {
-                    url: "img_compressed/Games/mazeRunner/2-min.jpg",
-                }, {
-                    url: "img_compressed/Games/mazeRunner/3-min.jpg",
-                }],
-            year: "Jun, 2013",
-            haveProject: false,
-            view_project_url: "",
-            haveGithub: false,
-            github_url: "",
+            // }, {
+            //     title: 'Maze Runner',
+            //     tags: 'Puzzld Game, PC, Mobile, Unity3D',
+            //     description: 'Player switches between first person and third person to solve maze puzzles',
+            //     img_url: "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10616309_767037970035866_2224106353375435192_n.jpg?oh=bee4962b972bda93d5d34b11ff44e879&oe=5635662E",
+            //     img_url: "img_compressed/Games/mazeRunner/1-min.jpg",
+            //     haveGallery: false,
+            //     gallery: [
+            //         {
+            //             url: "img_compressed/Games/mazeRunner/2-min.jpg",
+            //         }, {
+            //             url: "img_compressed/Games/mazeRunner/3-min.jpg",
+            //         }],
+            //     year: "Jun, 2013",
+            //     haveProject: false,
+            //     view_project_url: "",
+            //     haveGithub: false,
+            //     github_url: "",
         }];
 
 
