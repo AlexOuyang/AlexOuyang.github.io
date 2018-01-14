@@ -575,7 +575,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         {
             title: 'Pixel Girl',
             tags: 'Pixel Art, Design',
-            description: 'Pixel Girl artWorks',
+            description: 'A pixel art portrait for my girlfriend',
             img_url: "img_compressed/Art/pixelGirl/pixelGirl3.png",
             haveGallery: false,
             gallery: [
@@ -601,7 +601,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: 'Tron Model - steelBlue',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            description: 'TRON light cycle 3D model made using Blender',
             img_url: "img_compressed/Art/tronBlue/1.jpg",
             haveGallery: true,
             gallery: [
@@ -616,9 +616,9 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: 'Tron Model - red',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            description: 'TRON light cycle 3D model made using Blender',
             img_url: "img_compressed/Art/tronRed/1.jpg",
-            haveGallery: false,
+            haveGallery: true,
             gallery: [
                 {
                     url: "img_compressed/Art/tronRed/2.jpg",
@@ -630,7 +630,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: '❣ Meca Model - Gabrille',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            description: 'Meca 3D model made using Blender',
             img_url: "img_compressed/Art/angel/1.jpg",
             haveGallery: true,
             gallery: [
@@ -650,9 +650,9 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: '❣ Meca Model - 04',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender inspired by Evangelion',
+            description: 'Meca 3D model made using Blender',
             img_url: "img_compressed/Art/04/1.png",
-            haveGallery: false,
+            haveGallery: true,
             gallery: [
                 {
                     url: "img_compressed/Art/04/2.jpg",
@@ -667,7 +667,7 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: '❣ Meca Model - death',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            description: 'Meca 3D model made using Blender',
             img_url: "img_compressed/Art/death/1.png",
             haveGallery: true,
             gallery: [
@@ -686,9 +686,9 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
         }, {
             title: '❣ Meca Model - Blue Elf',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            description: 'Meca 3D model made using Blender',
             img_url: "img_compressed/Art/blueElf/1.png",
-            haveGallery: false,
+            haveGallery: true,
             gallery: [
                 {
                     url: "img_compressed/Art/blueElf/2.jpg",
@@ -703,11 +703,11 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
                 }],
             year: 2013,
         }, {
-            title: '❣ Meca Model - Pantacle',
+            title: '❣ Meca Model',
             tags: 'Art, 3D Modeling, Blender',
-            description: 'Meca 3D model that I designed and modeld using Blender, inspired by Gundam',
+            description: 'Meca 3D model made using Blender',
             img_url: "img_compressed/Art/snake/1.jpg",
-            haveGallery: false,
+            haveGallery: true,
             gallery: [
                 {
                     url: "img_compressed/Art/snake/2.jpg",
@@ -742,34 +742,34 @@ angular.module('ngFilter').controller("MainController", function ($scope) {
             img_url: "img_compressed/Art/drawings/pic6.jpg",
             year: 2014,
         }, {
-            title: 'My Drawing',
-            tags: 'Drawing, Art',
-            description: "This is my art",
-            img_url: "img_compressed/Art/drawings/pic5.jpg",
-            year: 2013,
-        }, {
-            title: 'My Drawing',
-            tags: 'Drawing, Art',
-            description: "This is my art",
-            img_url: "img_compressed/Art/drawings/pic4.jpg",
-            year: 2012,
-        }, {
-            title: 'My Drawing',
-            tags: 'Drawing, Art',
-            description: "This is my art",
-            img_url: "img_compressed/Art/drawings/pic3.jpg",
-            year: 2011,
-        }, {
-            title: 'My Drawing',
-            tags: 'Drawing, Art',
-            description: "This is my art",
-            img_url: "img_compressed/Art/drawings/pic2.jpg",
-            year: 2011,
-        }, {
-            title: 'My Drawing',
-            tags: 'Drawing, Art',
-            description: "This is my art",
-            img_url: "img_compressed/Art/drawings/pic1.jpg",
-            year: 2011,
+        //     title: 'My Drawing',
+        //     tags: 'Drawing, Art',
+        //     description: "This is my art",
+        //     img_url: "img_compressed/Art/drawings/pic5.jpg",
+        //     year: 2013,
+        // }, {
+        //     title: 'My Drawing',
+        //     tags: 'Drawing, Art',
+        //     description: "This is my art",
+        //     img_url: "img_compressed/Art/drawings/pic4.jpg",
+        //     year: 2012,
+        // }, {
+        //     title: 'My Drawing',
+        //     tags: 'Drawing, Art',
+        //     description: "This is my art",
+        //     img_url: "img_compressed/Art/drawings/pic3.jpg",
+        //     year: 2011,
+        // }, {
+        //     title: 'My Drawing',
+        //     tags: 'Drawing, Art',
+        //     description: "This is my art",
+        //     img_url: "img_compressed/Art/drawings/pic2.jpg",
+        //     year: 2011,
+        // }, {
+        //     title: 'My Drawing',
+        //     tags: 'Drawing, Art',
+        //     description: "This is my art",
+        //     img_url: "img_compressed/Art/drawings/pic1.jpg",
+        //     year: 2011,
         }];
 });
